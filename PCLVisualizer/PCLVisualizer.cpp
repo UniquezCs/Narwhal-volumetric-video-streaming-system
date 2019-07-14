@@ -87,7 +87,6 @@ void PCLVisualizer::play() {
 			for (int k = 0; k < 5000; k++) {
 				xyzs = frames2xyz(buffer.at(i).at(j));
 				
-
 				}
 				
 				
