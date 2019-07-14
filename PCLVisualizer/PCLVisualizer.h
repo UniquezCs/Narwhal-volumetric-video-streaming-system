@@ -39,8 +39,7 @@ private:
 	vector<char> p;
 	vector<vector<string>> buffer;
 	vector<string> frames;
-	vector<double> xyz;
-	vector<vector<double>> xyzs;
+	vector<vector<float>> xyzs;//一个文件中的所有坐标（包含坐标中的坐标点）
 
 
 	string s;
@@ -57,7 +56,9 @@ private:
 	//请求头
 	QNetworkRequest request;
 	QNetworkAccessManager manager;
-	int PCLVisualizer::bufferContorl(int n_pcd);
+	int bufferContorl(int n_pcd);
+	vector<vector<float>> frames2xyz(string frame);
+	vector<float> getXYZ(string point);//一个点
 
 private slots:
 	//创建打开槽

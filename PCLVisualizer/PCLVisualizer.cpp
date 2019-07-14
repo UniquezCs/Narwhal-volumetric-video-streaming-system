@@ -77,15 +77,27 @@ void PCLVisualizer::onOpen()
 }
 
 void PCLVisualizer::play() {
-	std::string addr = "F:/temp/temp";
 	std::string pcd_name;
 	int pcd_number = 300;
 	int i = 0;
 	viewer->addCoordinateSystem(1.0);
 	while (i < pcd_number) {
 		viewer->resetCamera();
-		pcd_name =addr + to_string(i)+".pcd";
-		pcl::io::loadPCDFile(pcd_name, *cloud2);
+		for (int j = 0; j < 30; j++) {
+			for (int k = 0; k < 5000; k++) {
+				xyzs = frames2xyz(buffer.at(i).at(j));
+				
+
+				}
+				
+				
+
+			
+			
+
+		}
+		
+
 		viewer->updatePointCloud(cloud2, "cloud2");
 		qApp->processEvents();//代替spin(),具体原理不清楚
 		ui.qvtkWidget->update();
@@ -123,7 +135,6 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 		}
  		string frame(p.begin(),p.end());
 		p.clear();
-
 		frames.push_back(frame);
 		n_frame++;
 		if (n_frame == 30) {
@@ -131,8 +142,8 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 			buffer.push_back(frames);
 			frames.clear();
 		}
-		
-		
+
+
 	}
 
 	else
@@ -150,9 +161,37 @@ int PCLVisualizer::bufferContorl(int n_pcd) {
 	return 1;
 }
 
-void PCLVisualizer::frames2xyz(string frame) {
+vector<vector<float>> PCLVisualizer::frames2xyz(string frame) {
+	size_t size = frame.size();
+	size_t n_point = count(frame.begin(), frame.end(), '\r');//点个数
+	size_t offset = 0;
+	string point;
+	for (size_t i=0; i <= n_point; i++) {
+		
+		point = frame.substr(offset, frame.find('\r', offset)-offset);
+		offset = frame.find('\r', offset+2)+2;
+		xyzs.push_back(getXYZ(point));
+		point.clear();
+	}
+	size_t pos = frame.find("/n", 0);
+
+	return xyzs;
+}
+
+
+vector<float> PCLVisualizer::getXYZ(string point) {
+	int pos_block = 0;
+	vector<float> x_y_z;
+	for (int i = 0; i < 3; i++) {
+		float xyz = stod(point.substr(pos_block, point.find(' ', pos_block)-pos_block));
+		pos_block = point.find(' ', pos_block)+1;
+		x_y_z.push_back(xyz);
+
+
+	}
+	return x_y_z;
+
 
 
 }
-
 
