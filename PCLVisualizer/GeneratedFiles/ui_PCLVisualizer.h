@@ -26,7 +26,6 @@ class Ui_PCLVisualizerClass
 public:
     QWidget *centralWidget;
     QVTKWidget *qvtkWidget;
-    QPushButton *button_download;
     QPushButton *button_play;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
@@ -42,12 +41,9 @@ public:
         qvtkWidget = new QVTKWidget(centralWidget);
         qvtkWidget->setObjectName(QString::fromUtf8("qvtkWidget"));
         qvtkWidget->setGeometry(QRect(0, 0, 601, 351));
-        button_download = new QPushButton(centralWidget);
-        button_download->setObjectName(QString::fromUtf8("button_download"));
-        button_download->setGeometry(QRect(500, 300, 75, 23));
         button_play = new QPushButton(centralWidget);
         button_play->setObjectName(QString::fromUtf8("button_play"));
-        button_play->setGeometry(QRect(30, 90, 321, 251));
+        button_play->setGeometry(QRect(240, 310, 75, 23));
         PCLVisualizerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PCLVisualizerClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -68,8 +64,7 @@ public:
     void retranslateUi(QMainWindow *PCLVisualizerClass)
     {
         PCLVisualizerClass->setWindowTitle(QApplication::translate("PCLVisualizerClass", "PCLVisualizer", nullptr));
-        button_download->setText(QApplication::translate("PCLVisualizerClass", "\347\275\221\347\273\234\346\222\255\346\224\276", nullptr));
-        button_play->setText(QApplication::translate("PCLVisualizerClass", "\346\234\254\345\234\260\346\222\255\346\224\276", nullptr));
+        button_play->setText(QApplication::translate("PCLVisualizerClass", "play", nullptr));
     } // retranslateUi
 
 };

@@ -41,6 +41,8 @@ private:
 	vector<string> frames;
 	vector<vector<float>> xyzs;//一个文件中的所有坐标（包含坐标中的坐标点）
 
+	typedef pcl::PointXYZ PointT;
+
 
 	string s;
 	int n_pcd;
@@ -57,12 +59,13 @@ private:
 	QNetworkRequest request;
 	QNetworkAccessManager manager;
 	int bufferContorl(int n_pcd);
-	vector<vector<float>> frames2xyz(string frame);
+	vector<vector<float>> frame2xyz(string frame);
 	vector<float> getXYZ(string point);//一个点
+	bool buffer_is (vector<vector<string>> buffer);
+
 
 private slots:
 	//创建打开槽
-	void onOpen();
 	void play();
 	void download();
 	void replyFinished(QNetworkReply *reply);

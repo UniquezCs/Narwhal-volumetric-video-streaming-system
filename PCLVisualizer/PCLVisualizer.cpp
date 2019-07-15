@@ -15,9 +15,7 @@ PCLVisualizer::PCLVisualizer(QWidget *parent)
 	//初始化
 	initialVtkWidget();
 	//连接信号和槽
-	//connect(ui.actionOpen, SIGNAL(triggered()), this, SLOT(onOpen()));
-	connect(ui.button_play, SIGNAL(clicked()), this, SLOT(pla7y()));
-	connect(ui.button_download, SIGNAL(clicked()), this, SLOT(download()));
+	connect(ui.button_play, SIGNAL(clicked()), this, SLOT(download()));
 }
 
 PCLVisualizer::~PCLVisualizer()
@@ -41,40 +39,6 @@ void PCLVisualizer::initialVtkWidget()
 	int n_frame = 0;
 }
 //读取文本型和二进制型点云数据
-void PCLVisualizer::onOpen()
-{
-	//只能打开PCD文件
-	QString fileName = QFileDialog::getOpenFileName(this,
-		tr("Open PointCloud"), "."
-	);
-	if (!fileName.isEmpty())
-	{
-		std::string file_name = fileName.toStdString();
-		pcl::PCLPointCloud2::Ptr cloud2;
-		Eigen::Vector4f origin;
-		Eigen::Quaternionf orientation;
-		int pcd_version;
-		int data_type;
-		unsigned int data_idx;
-		int offset = 0;
-		pcl::PCDReader rd;
-		std::string addr = "D:/Holographic/dataset/loot/loot/Ply/";
-		std::string pcd_name;
-		int pcd_number = 1300;
-		int i = 1000;
-		viewer->addCoordinateSystem(1.0);
-		while (i < pcd_number) {
-			viewer->resetCamera();
-			pcd_name = addr + "loot_vox10_" + to_string(i++) + ".ply";
-			//rd.readHeader(pcd_name, *cloud2, origin, orientation, pcd_version, data_type, data_idx);
-			pcl::io::loadPLYFile(pcd_name, *cloud);
-			viewer->updatePointCloud(cloud, "cloud");
-			qApp->processEvents();
-			ui.qvtkWidget->update();
-
-		}
-	}
-}
 
 void PCLVisualizer::play() {
 	std::string pcd_name;
@@ -84,21 +48,18 @@ void PCLVisualizer::play() {
 	while (i < pcd_number) {
 		viewer->resetCamera();
 		for (int j = 0; j < 30; j++) {
-			for (int k = 0; k < 5000; k++) {
-				xyzs = frames2xyz(buffer.at(i).at(j));
-				
-				}
-				
-				
-
-			
-			
+			xyzs = frame2xyz(buffer.at(i).at(j));//一帧点云转化为坐标
+			for (int k = 0; k < xyzs.size(); k++) {
+				PointT p;
+				p.x = xyzs.at(k).at(0);
+				p.y = xyzs.at(k).at(1);
+				p.z = xyzs.at(k).at(2);
+				cloud2->points.push_back(p);
+			}
 
 		}
-		
-
 		viewer->updatePointCloud(cloud2, "cloud2");
-		qApp->processEvents();//代替spin(),具体原理不清楚
+		qApp->processEvents();//代替spin()
 		ui.qvtkWidget->update();
 		i++;
 	}
@@ -114,7 +75,10 @@ void PCLVisualizer::download() {
 		request.setUrl(QUrl("http://114.213.214.160/pcd_test/test_pcd" + n_server + stuff));
 		manager.get(request);
 	}
-	//play();
+
+	if (buffer.size()==5) {
+		play();
+	}
 }
 
 // 响应结束，进行结果处理
@@ -126,7 +90,6 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 		QString n_client = QString::fromStdString(to_string(n_pcd++));
 		QByteArray bytes = reply->readAll();
 		// 缓存到本地
-
 		for (size_t i = 180; i < bytes.size(); i++) {
 			if (i >= bytes.size() || i < 0) { cout << i; break; }//检测下标是否溢出
 			char by = bytes.at(i);
@@ -136,15 +99,12 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 		p.clear();
 		frames.push_back(frame);
 		n_frame++;
-		if (n_frame == 30) {
+		if (n_frame >= 30) {
 			n_frame = 0;//重置
 			buffer.push_back(frames);
 			frames.clear();
 		}
-
-
 	}
-
 	else
 	{
 		cout<< "erros";
@@ -153,19 +113,16 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 
 
 int PCLVisualizer::bufferContorl(int n_pcd) {
-
-
-
-
 	return 1;
 }
 
-vector<vector<float>> PCLVisualizer::frames2xyz(string frame) {
+
+vector<vector<float>> PCLVisualizer::frame2xyz(string frame) {
 	size_t size = frame.size();
 	size_t n_point = count(frame.begin(), frame.end(), '\r');//点个数
 	size_t offset = 0;
 	string point;
-	for (size_t i=0; i <= n_point; i++) {
+	for (size_t i=0; i < n_point; i++) {
 		
 		point = frame.substr(offset, frame.find('\r', offset)-offset);
 		offset = frame.find('\r', offset+2)+2;
@@ -182,7 +139,7 @@ vector<float> PCLVisualizer::getXYZ(string point) {
 	int pos_block = 0;
 	vector<float> x_y_z;
 	for (int i = 0; i < 3; i++) {
-		float xyz = stod(point.substr(pos_block, point.find(' ', pos_block)-pos_block));
+		float xyz = stof(point.substr(pos_block, point.find(' ', pos_block)-pos_block));
 		pos_block = point.find(' ', pos_block)+1;
 		x_y_z.push_back(xyz);
 
@@ -190,7 +147,7 @@ vector<float> PCLVisualizer::getXYZ(string point) {
 	}
 	return x_y_z;
 
-
-
 }
+
+
 

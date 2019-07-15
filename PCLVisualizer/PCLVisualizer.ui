@@ -24,30 +24,17 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="button_download">
+   <widget class="QPushButton" name="button_play">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>300</y>
+      <x>240</x>
+      <y>310</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>网络播放</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_play">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>90</y>
-      <width>321</width>
-      <height>251</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>本地播放</string>
+     <string>play</string>
     </property>
    </widget>
   </widget>
