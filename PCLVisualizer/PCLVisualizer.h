@@ -16,13 +16,15 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include<pcl/io/vtk_io.h>
 #include<pcl/io/vtk_lib_io.h>
 #include<QtNetwork>
-#include<pcl/io/buffers.h>
 #include<vector>
+#include <thread>
 extern int pcd_number;
 using namespace std;
 const int FPS =30;
 const int BUFFER_TIME = 4;
 const int MAX_ = 4;
+
+
 class PCLVisualizer : public QMainWindow
 {
 	Q_OBJECT
@@ -31,13 +33,12 @@ public:
 
 	PCLVisualizer(QWidget *parent = 0);
 	~PCLVisualizer();
-
+	 vector<vector<string>> buffer;
 private:
 	Ui::PCLVisualizerClass ui;
 	//char p[160000]="0";
 
 	vector<char> p;
-	vector<vector<string>> buffer;
 	vector<string> frames;
 	vector<vector<float>> xyzs;//一个文件中的所有坐标（包含坐标中的坐标点）
 
@@ -47,7 +48,7 @@ private:
 	string s;
 	int n_pcd;
 	int n_frame;
-	int n_buffer;
+
 	//点云数据存储
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud;
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud2;
@@ -72,4 +73,6 @@ private slots:
 
 
 };
+
+void test(PCLVisualizer &w);
 #endif PCLVISUALIZER_H

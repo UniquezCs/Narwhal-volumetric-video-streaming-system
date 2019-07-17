@@ -8,3 +8,14 @@ int main(int argc, char *argv[])
 	w.show();
 	return a.exec();
 }
+
+
+
+void test(PCLVisualizer &w) {
+	while (1) {
+
+		size_t size = w.buffer.size();
+	}
+
+
+}
