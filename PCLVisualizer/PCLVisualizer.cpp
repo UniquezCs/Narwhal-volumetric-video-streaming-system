@@ -37,9 +37,8 @@ void PCLVisualizer::initialVtkWidget()
 	int n_pcd = 0;
 	int n_buffer = FPS * BUFFER_TIME;
 	
-	
 }
-//读取文本型和二进制型点云数据
+//读取缓存中的点云数据并渲染播放
 
 void PCLVisualizer::play() {
 	std::string pcd_name;
@@ -47,7 +46,7 @@ void PCLVisualizer::play() {
 	int i = 0;
 	viewer->addCoordinateSystem(1.0);
 	while (i < video_time) {
-		viewer->resetCamera();
+		
 		for (int j = 0; j < 30; j++) {
 			xyzs = frame2xyz(buffer.at(i).at(j));//一帧点云转化为坐标
 			for (int k = 0; k < xyzs.size(); k++) {
@@ -58,7 +57,8 @@ void PCLVisualizer::play() {
 				cloud2->points.push_back(p);
 			}
 			viewer->updatePointCloud(cloud2, "cloud2");
-			qApp->processEvents();//代替spin()
+			qApp->processEvents();//刷新,代替spin()
+			viewer->resetCamera();//重置相机
 			ui.qvtkWidget->update();
 			cloud2->clear();
 			xyzs.clear();
@@ -68,6 +68,7 @@ void PCLVisualizer::play() {
 	}
 }
 
+//向服务器下载请求
 void PCLVisualizer::download() {
 	int pcd_number = 300;
 	QString stuff = ".pcd";
@@ -76,13 +77,14 @@ void PCLVisualizer::download() {
 	for (int i = 0; i < pcd_number; i++) {
 		QString n_server = QString::fromStdString(to_string(i));
 		//QString n_server = QString::fromStdString(to_string(i+1000));
-		request.setUrl(QUrl("http://114.213.214.160/pcd_test/test_pcd" + n_server + stuff));
+		request.setUrl(QUrl("http://localhost/pcd_test/test_pcd" + n_server + stuff));
 		//request.setUrl(QUrl("http://114.213.214.160/loot/loot_vox10_" + n_server + stuff2));
 		manager.get(request);
 	}
 	n_frame = 0;
 	buffer.clear();
 }
+
 // 响应结束，进行结果处理
 void PCLVisualizer::replyFinished(QNetworkReply *reply)
 {
@@ -91,18 +93,8 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 	{
 		QString n_client = QString::fromStdString(to_string(n_pcd++));
 		QByteArray bytes = reply->readAll();
-		
-		//// 缓存到本地
-		//for (size_t i = 180; i < bytes.size(); i++) {
-		//	if (i >= bytes.size() || i < 0) { cout << i; break; }//检测下标是否溢出
-		//	char by = bytes.at(i);
-		//	p.push_back(by);
-		//}
- 	    //	string frame(p.begin(),p.end());
-		//p.clear();
-		
 		string frame = bytes.mid(180, bytes.size());
-		//string frame = bytes.mid(300, bytes.size());
+		//string frame = bytes.mid(300, bytes.size());%xyzrgb点云
 		frames.push_back(frame);
 		n_frame++;
 		if (n_frame >= 30) {
@@ -155,4 +147,3 @@ vector<float> PCLVisualizer::getXYZ(string point) {
 	return x_y_z;
 
 }
-

@@ -24,7 +24,6 @@ const int FPS =30;
 const int BUFFER_TIME = 4;
 const int MAX_ = 4;
 
-
 class PCLVisualizer : public QMainWindow
 {
 	Q_OBJECT
@@ -33,19 +32,12 @@ public:
 
 	PCLVisualizer(QWidget *parent = 0);
 	~PCLVisualizer();
-	 vector<vector<string>> buffer;
+	 vector<vector<string>> buffer;//存储frames
 private:
 	Ui::PCLVisualizerClass ui;
-	//char p[160000]="0";
-
-	vector<char> p;
-	vector<string> frames;
+	vector<string> frames;//存储30帧
 	vector<vector<float>> xyzs;//一个文件中的所有坐标（包含坐标中的坐标点）
-
 	typedef pcl::PointXYZ PointT;
-
-
-	string s;
 	int n_pcd;
 	int n_frame;
 
@@ -62,17 +54,11 @@ private:
 	int bufferContorl(int n_pcd);
 	vector<vector<float>> frame2xyz(string frame);
 	vector<float> getXYZ(string point);//一个点
-	bool buffer_is (vector<vector<string>> buffer);
-
 
 private slots:
 	//创建打开槽
 	void play();
 	void download();
 	void replyFinished(QNetworkReply *reply);
-
-
 };
-
-void test(PCLVisualizer &w);
 #endif PCLVISUALIZER_H
