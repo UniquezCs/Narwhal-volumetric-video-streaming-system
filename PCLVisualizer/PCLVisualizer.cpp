@@ -54,7 +54,7 @@ void PCLVisualizer::play() {
 				p.x = xyzs.at(k).at(0);
 				p.y = xyzs.at(k).at(1);
 				p.z = xyzs.at(k).at(2);
-				cloud2->points.push_back(p);
+				cloud2->points.push_back(p);//添加点云
 			}
 			viewer->updatePointCloud(cloud2, "cloud2");
 			qApp->processEvents();//刷新,代替spin()
