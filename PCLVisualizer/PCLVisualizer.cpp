@@ -5,9 +5,24 @@
 #include <Qstring.h>
 #include <iomanip>
 #include <string>
-
-
+#include <Windows.h>
+#include <thread>
 using namespace std;
+mutex mymutex;
+
+void mythread(vector<vector<string>> &buffer) 
+{
+	while (true) {
+		mymutex.lock();
+		if (buffer.size() == 1) {
+
+		}
+		/*else if(条件){
+			....
+		}*/
+		mymutex.unlock();
+	}
+}
 
 PCLVisualizer::PCLVisualizer(QWidget *parent)
 {
@@ -16,11 +31,19 @@ PCLVisualizer::PCLVisualizer(QWidget *parent)
 	initialVtkWidget();
 	//连接信号和槽
 	connect(ui.button_play, SIGNAL(clicked()), this, SLOT(download()));
+
+	createthread();
 }
 
 PCLVisualizer::~PCLVisualizer()
 {
 	delete &ui;
+}
+
+void PCLVisualizer::createthread() 
+{
+	std::thread thread1(mythread, std::ref(buffer));
+	thread1.detach(); //和主线程分离，放后台
 }
 
 void PCLVisualizer::initialVtkWidget()
@@ -64,7 +87,9 @@ void PCLVisualizer::play() {
 			xyzs.clear();
 		}
 		i++;
+		mymutex.lock();
 		buffer.pop_back();
+		mymutex.unlock();
 	}
 }
 
@@ -82,7 +107,9 @@ void PCLVisualizer::download() {
 		manager.get(request);
 	}
 	n_frame = 0;
+	mymutex.lock();
 	buffer.clear();
+	mymutex.unlock();
 }
 
 // 响应结束，进行结果处理
@@ -99,8 +126,12 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 		n_frame++;
 		if (n_frame >= 30) {
 			n_frame = 0;//重置
+
+			mymutex.lock();
 			buffer.push_back(frames);
 			frames.clear();
+			mymutex.unlock();
+
 			if (buffer.size() == 2) {
 				play();
 			}

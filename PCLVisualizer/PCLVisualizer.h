@@ -17,7 +17,6 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include<pcl/io/vtk_lib_io.h>
 #include<QtNetwork>
 #include<vector>
-#include <thread>
 extern int pcd_number;
 using namespace std;
 const int FPS =30;
@@ -32,7 +31,9 @@ public:
 
 	PCLVisualizer(QWidget *parent = 0);
 	~PCLVisualizer();
-	 vector<vector<string>> buffer;//´æ´¢frames
+	 vector<vector<string>> buffer;//´æ´¢frame
+	 void createthread();
+	 
 private:
 	Ui::PCLVisualizerClass ui;
 	vector<string> frames;//´æ´¢30Ö¡
@@ -40,6 +41,7 @@ private:
 	typedef pcl::PointXYZ PointT;
 	int n_pcd;
 	int n_frame;
+	
 
 	//µãÔÆÊý¾Ý´æ´¢
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud;
@@ -60,5 +62,6 @@ private slots:
 	void play();
 	void download();
 	void replyFinished(QNetworkReply *reply);
+
 };
 #endif PCLVISUALIZER_H
