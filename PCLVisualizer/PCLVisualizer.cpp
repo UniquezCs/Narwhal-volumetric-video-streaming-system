@@ -19,6 +19,7 @@ PCLVisualizer::PCLVisualizer(QWidget *parent)
 	connect(ui.button_play, SIGNAL(clicked()), this, SLOT(download()));
 
 	createthread();
+	
 }
 
 PCLVisualizer::~PCLVisualizer()
