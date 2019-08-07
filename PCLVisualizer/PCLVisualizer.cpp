@@ -10,20 +10,6 @@
 using namespace std;
 mutex mymutex;
 
-void mythread(vector<vector<string>> &buffer) 
-{
-	while (true) {
-		mymutex.lock();
-		if (buffer.size() == 1) {
-
-		}
-		/*else if(条件){
-			....
-		}*/
-		mymutex.unlock();
-	}
-}
-
 PCLVisualizer::PCLVisualizer(QWidget *parent)
 {
 	ui.setupUi(this);
@@ -42,8 +28,20 @@ PCLVisualizer::~PCLVisualizer()
 
 void PCLVisualizer::createthread() 
 {
-	std::thread thread1(mythread, std::ref(buffer));
-	thread1.detach(); //和主线程分离，放后台
+	auto mylamthread = [this] {
+		while (true) {
+			mymutex.lock();
+			if (buffer.size() == 1) {
+
+			}
+			/*else if(条件){
+				....
+			}*/
+			mymutex.unlock();
+		}
+	};
+	std::thread mythread(mylamthread);
+	mythread.detach();
 }
 
 void PCLVisualizer::initialVtkWidget()
@@ -71,7 +69,7 @@ void PCLVisualizer::play() {
 	while (i < video_time) {
 		
 		for (int j = 0; j < 30; j++) {
-			xyzs = frame2xyz(buffer.at(i).at(j));//一帧点云转化为坐标
+			xyzs = frame2xyz(buffer.at(0).at(j));//一帧点云转化为坐标
 			for (int k = 0; k < xyzs.size(); k++) {
 				PointT p;
 				p.x = xyzs.at(k).at(0);
@@ -88,7 +86,8 @@ void PCLVisualizer::play() {
 		}
 		i++;
 		mymutex.lock();
-		buffer.pop_back();
+		vector<vector<string> >::iterator deletebuffer = buffer.begin();
+		buffer.erase(deletebuffer);
 		mymutex.unlock();
 	}
 }
@@ -100,6 +99,7 @@ void PCLVisualizer::download() {
 	QString stuff2 = ".ply";
 	connect(&manager, SIGNAL(finished(QNetworkReply *)), this, SLOT(replyFinished(QNetworkReply *)));
 	for (int i = 0; i < pcd_number; i++) {
+		std::cout << i << std::endl;
 		QString n_server = QString::fromStdString(to_string(i));
 		//QString n_server = QString::fromStdString(to_string(i+1000));
 		request.setUrl(QUrl("http://localhost/pcd_test/test_pcd" + n_server + stuff));
