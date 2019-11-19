@@ -17,11 +17,13 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include<pcl/io/vtk_lib_io.h>
 #include<QtNetwork>
 #include<vector>
+#include<qthread.h>
 extern int pcd_number;
 using namespace std;
 const int FPS =30;
 const int BUFFER_TIME = 4;
 const int MAX_ = 4;
+
 
 class PCLVisualizer : public QMainWindow
 {
@@ -31,37 +33,40 @@ public:
 
 	PCLVisualizer(QWidget *parent = 0);
 	~PCLVisualizer();
-	 vector<vector<string>> buffer;//存储frame
-	 void createthread();
-	 
+	 //vector<vector<string>> buffer;//存储frame
+
+	int bufferContorl(int n_pcd);
+	//vector<vector<float>> frame2xyz(string frame);
+	//vector<float> getXYZ(string point);//一个点
+	void initialVtkWidget();	//初始化vtk部件
 private:
-	Ui::PCLVisualizerClass ui;
-	vector<string> frames;//存储30帧
-	vector<vector<float>> xyzs;//一个文件中的所有坐标（包含坐标中的坐标点）
-	typedef pcl::PointXYZ PointT;
-	int n_pcd;
-	int n_frame;
-	
-
 	//点云数据存储
-	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud;
-	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud2;
-	boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
+	int Frame_number = 300;
 
-	//初始化vtk部件
-	void initialVtkWidget();
 	//请求头
 	QNetworkRequest request;
 	QNetworkAccessManager manager;
-	int bufferContorl(int n_pcd);
-	vector<vector<float>> frame2xyz(string frame);
-	vector<float> getXYZ(string point);//一个点
 
-private slots:
+public slots:
 	//创建打开槽
 	void play();
 	void download();
+	// 响应结束，进行结果处理
 	void replyFinished(QNetworkReply *reply);
 
+
 };
+
+class play_thread : public QThread{
+	Q_OBJECT
+public:
+	play_thread(QObject *parent = 0);
+
+private:
+
+	void run();
+
+};
+
+
 #endif PCLVISUALIZER_H

@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -27,6 +28,7 @@ public:
     QWidget *centralWidget;
     QVTKWidget *qvtkWidget;
     QPushButton *button_play;
+    QLabel *label;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -43,7 +45,10 @@ public:
         qvtkWidget->setGeometry(QRect(0, 0, 601, 351));
         button_play = new QPushButton(centralWidget);
         button_play->setObjectName(QString::fromUtf8("button_play"));
-        button_play->setGeometry(QRect(240, 310, 75, 23));
+        button_play->setGeometry(QRect(240, 310, 161, 23));
+        label = new QLabel(centralWidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(340, 320, 54, 12));
         PCLVisualizerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PCLVisualizerClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -65,6 +70,7 @@ public:
     {
         PCLVisualizerClass->setWindowTitle(QApplication::translate("PCLVisualizerClass", "PCLVisualizer", nullptr));
         button_play->setText(QApplication::translate("PCLVisualizerClass", "play", nullptr));
+        label->setText(QApplication::translate("PCLVisualizerClass", "TextLabel", nullptr));
     } // retranslateUi
 
 };

@@ -1,6 +1,3 @@
-#include "PCLVisualizer.h"
-#include <QtWidgets/QApplication>
-#include <malloc.h>
 #include <k4a/k4a.hpp>
 #include <iostream>
 #include <vector>
@@ -16,16 +13,15 @@ using namespace boost;
 using namespace pcl;
 typedef pcl::PointXYZRGBA PointType;
 
-int generate_vpc()
+int genreate_vpc()
 {
 	int i = 0;
-	int n_ply = 1000;
 	const uint32_t deviceCount = k4a::device::get_installed_count();//读取kinect数目
 	if (deviceCount == 0)
 	{
-		//cout << "no azure kinect devices detected!" << endl;
-		return 0;
+		cout << "no azure kinect devices detected!" << endl;
 	}
+
 	// PCL Visualizer
 	boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("Point Cloud Viewer"));
 
@@ -37,22 +33,22 @@ int generate_vpc()
 
 	//回调函数是个lambda函数,cloud和mutex以引用(变量)的形式捕捉,传值(常量)
 	boost::function<void(const pcl::PointCloud<PointType>::ConstPtr&)> function =
-		[&cloud, &mutex,&n_ply](const pcl::PointCloud<PointType>::ConstPtr& ptr)
+		[&cloud, &mutex](const pcl::PointCloud<PointType>::ConstPtr& ptr) 
 	{
 		boost::mutex::scoped_lock lock(mutex);
 
 		/* Point Cloud Processing */
 
 		cloud = ptr->makeShared();
-		Sleep(33);
-		pcl::io::savePLYFile("test"+to_string(n_ply++)+".ply", *cloud);
+		
+		pcl::io::savePLYFile("test.ply", *cloud);
 
 	};
 
 	// KinectAzureDKGrabber
-	boost::shared_ptr<pcl::Grabber> grabber =
-		boost::make_shared<pcl::KinectAzureDKGrabber>(0, K4A_DEPTH_MODE_NFOV_2X2BINNED, K4A_IMAGE_FORMAT_COLOR_BGRA32, K4A_COLOR_RESOLUTION_720P);
-
+	boost::shared_ptr<pcl::Grabber> grabber = 
+		boost::make_shared<pcl::KinectAzureDKGrabber>(0, K4A_DEPTH_MODE_WFOV_2X2BINNED, K4A_IMAGE_FORMAT_COLOR_BGRA32, K4A_COLOR_RESOLUTION_720P);
+	
 	boost::shared_ptr<pcl::KinectAzureDKGrabber> grabber_ = boost::dynamic_pointer_cast<pcl::KinectAzureDKGrabber>(grabber);
 
 	// Register Callback Function
@@ -72,12 +68,12 @@ int generate_vpc()
 	Eigen::Matrix4f extrinsics_eigen = Eigen::Matrix4f::Identity();
 	viewer->setCameraParameters(intrinsics_eigen, extrinsics_eigen);
 
-	while (!viewer->wasStopped())
+	while (!viewer->wasStopped()) 
 	{
 		// Update Viewer
 		viewer->spinOnce();
 		boost::mutex::scoped_lock lock(mutex);
-		if (lock.owns_lock() && cloud)
+		if (lock.owns_lock() && cloud) 
 		{
 			// Update Point Cloud
 			if (!viewer->updatePointCloud(cloud, "cloud"))
@@ -92,21 +88,9 @@ int generate_vpc()
 	grabber->stop();
 
 	// Disconnect Callback Function
-	if (connection.connected())
+	if (connection.connected()) 
 	{
 		connection.disconnect();
 	}
 	return 0;
 }
-
-int main(int argc, char *argv[])
-{
-	QApplication a(argc, argv);
-	PCLVisualizer w;
-	w.show();
-	return a.exec();
-
-	//generate_vpc();
-
-}
-

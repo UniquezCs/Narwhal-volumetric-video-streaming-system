@@ -259,3 +259,9 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/PCLVisualizer/test1005.ply
+/PCLVisualizer/test1004.ply
+/PCLVisualizer/test1003.ply
+/PCLVisualizer/test1002.ply
+/PCLVisualizer/test1001.ply
+/PCLVisualizer/test1000.ply
