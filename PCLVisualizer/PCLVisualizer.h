@@ -18,11 +18,34 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include<QtNetwork>
 #include<vector>
 #include<qthread.h>
+#include <QFileDialog>
+#include <iostream>
+#include <vtkRenderWindow.h>
+#include <Qstring.h>
+#include <iomanip>
+#include <string>
+#include <Windows.h>
+#include <thread>
+#include <QtConcurrent>
+#include <queue>
+#include "PCCCommon.h"
+#include "PCCChrono.h"
+#include "PCCMemory.h"
+#include "PCCDecoder.h"
+#include "PCCMetrics.h"
+#include "PCCChecksum.h"
+#include "PCCContext.h"
+#include "PCCFrameContext.h"
+#include "PCCBitstream.h"
+#include "PCCGroupOfFrames.h"
+#include "PCCDecoderParameters.h"
+#include "PCCMetricsParameters.h"
+#include <program_options_lite.h>
+#include <tbb/tbb.h>
 extern int pcd_number;
 using namespace std;
-const int FPS =30;
-const int BUFFER_TIME = 4;
-const int MAX_ = 4;
+
+class render_thread;
 
 
 class PCLVisualizer : public QMainWindow
@@ -33,40 +56,35 @@ public:
 
 	PCLVisualizer(QWidget *parent = 0);
 	~PCLVisualizer();
-	 //vector<vector<string>> buffer;//存储frame
-
-	int bufferContorl(int n_pcd);
-	//vector<vector<float>> frame2xyz(string frame);
-	//vector<float> getXYZ(string point);//一个点
 	void initialVtkWidget();	//初始化vtk部件
+	void decode_thread();
+	void readbuffer_thread();
+	void run_render_thread();
+	Ui::PCLVisualizerClass* getui() { return &ui; }
+	boost::shared_ptr<pcl::visualization::PCLVisualizer> getviewer(){ return viewer; }
+	pcl::PointCloud<pcl::PointXYZRGB>::Ptr getcloud() { return cloud; }
 private:
-	//点云数据存储
-	int Frame_number = 300;
-
-	//请求头
-	QNetworkRequest request;
+	
+	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud;
+	QNetworkRequest request;//请求头
 	QNetworkAccessManager manager;
+	Ui::PCLVisualizerClass ui;
+	render_thread* thread = nullptr;
+	QThreadPool threadpool;
+	boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
+signals:
+	void sigrender();
+
 
 public slots:
 	//创建打开槽
-	void play();
+	void slotrender();
 	void download();
 	// 响应结束，进行结果处理
 	void replyFinished(QNetworkReply *reply);
 
-
 };
 
-class play_thread : public QThread{
-	Q_OBJECT
-public:
-	play_thread(QObject *parent = 0);
-
-private:
-
-	void run();
-
-};
 
 
 #endif PCLVISUALIZER_H

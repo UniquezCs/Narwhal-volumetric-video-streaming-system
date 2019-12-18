@@ -37,22 +37,22 @@ public:
     {
         if (PCLVisualizerClass->objectName().isEmpty())
             PCLVisualizerClass->setObjectName(QString::fromUtf8("PCLVisualizerClass"));
-        PCLVisualizerClass->resize(600, 400);
+        PCLVisualizerClass->resize(829, 537);
         centralWidget = new QWidget(PCLVisualizerClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         qvtkWidget = new QVTKWidget(centralWidget);
         qvtkWidget->setObjectName(QString::fromUtf8("qvtkWidget"));
-        qvtkWidget->setGeometry(QRect(0, 0, 601, 351));
+        qvtkWidget->setGeometry(QRect(0, 0, 831, 501));
         button_play = new QPushButton(centralWidget);
         button_play->setObjectName(QString::fromUtf8("button_play"));
-        button_play->setGeometry(QRect(240, 310, 161, 23));
+        button_play->setGeometry(QRect(0, 420, 41, 31));
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(340, 320, 54, 12));
+        label->setGeometry(QRect(50, 430, 54, 12));
         PCLVisualizerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PCLVisualizerClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 23));
+        menuBar->setGeometry(QRect(0, 0, 829, 23));
         PCLVisualizerClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(PCLVisualizerClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));

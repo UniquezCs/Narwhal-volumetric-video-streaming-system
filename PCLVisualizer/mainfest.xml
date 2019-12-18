@@ -1,0 +1,737 @@
+<PD format="Pointcloud/ply"  type="dynamic" encoding="ASCII" frames="600" GOF="30" Tiles=8 BaseURL="http://localhost/eghost_loot/">
+
+	<GOF id="1" >            
+		<AdaptationSet id="1">
+			<Representation id="1">
+   				<Frame id="1" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1000.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1000.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1000.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1000.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1000.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1000.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1000.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1000.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1000.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1000.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1000.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1000.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="2" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1001.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1001.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1001.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1001.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1001.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1001.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1001.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1001.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1001.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1001.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1001.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1001.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="3" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1002.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1002.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1002.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1002.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1002.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1002.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1002.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1002.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1002.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1002.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1002.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1002.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="4" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1003.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1003.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1003.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1003.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1003.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1003.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1003.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1003.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1003.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1003.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1003.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1003.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="5" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1004.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1004.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1004.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1004.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1004.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1004.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1004.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1004.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1004.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1004.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1004.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1004.ply
+					</Tile>
+				</Frame>
+				
+				<Frame id="6" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1005.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1005.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1005.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1005.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1005.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1005.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1005.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1005.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1005.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1005.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1005.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1005.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="7" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1006.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1006.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1006.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1006.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1006.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1006.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1006.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1006.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1006.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1006.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1006.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1006.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="8" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1007.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1007.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1007.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1007.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1007.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1007.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1007.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1007.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1007.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1007.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1007.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1007.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="9" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1008.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1008.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1008.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1008.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1008.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1008.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1008.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1008.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1008.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1008.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1008.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1008.ply
+					</Tile>
+				</Frame>
+
+				<Frame id="10" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					GOF1/r1/ply/tile_1/frame_1009.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					GOF1/r1/ply/tile_2/frame_1009.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_3/frame_1009.ply
+					</Tile>
+					<Tile id="4" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_4/frame_1009.ply
+					</Tile>
+					<Tile id="5" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_5/frame_1009.ply
+					</Tile>
+					<Tile id="6" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_6/frame_1009.ply
+					</Tile>
+					<Tile id="7" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_7/frame_1009.ply
+					</Tile>
+					<Tile id="8" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_8/frame_1009.ply
+					</Tile>
+					<Tile id="9" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_9/frame_1009.ply
+					</Tile>
+					<Tile id="10" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_10/frame_1009.ply
+					</Tile>
+					<Tile id="11" PointN="358635" size=6.2>
+					GOF1/r1/ply/tile_11/frame_1009.ply
+					</Tile>
+					<Tile id="12" PointN="192470" size=5.6>
+					GOF1/r1/ply/tile_12/frame_1009.ply
+					</Tile>
+				</Frame>
+
+			</Representation>
+			
+			<Representation id="2">
+
+			</Representation>
+		</AdaptationSet>
+
+		<AdaptationSet id="2">
+			<Tile id="1">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_1/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_1/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_1/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_1/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_1/loot.bin
+				</Representation>
+			</Tile>
+			<Tile id="2">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_2/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_2/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_2/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_2/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_2/loot.bin
+				</Representation>
+			</Tile>
+			<Tile id="3">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_3/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_3/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_3/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_3/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_3/loot.bin
+				</Representation>
+			</Tile>
+			<Tile id="4">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_4/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_4/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_4/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_4/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_4/loot.bin
+				</Representation>
+			</Tile>
+			<Tile id="5">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_5/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_5/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_5/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_5/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_5/loot.bin
+				</Representation>
+			</Tile>
+			<Tile id="6">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_6/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_6/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_6/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_6/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_6/loot.bin
+				</Representation>
+			</Tile>
+			<Tile id="7">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_7/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_7/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_7/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_7/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_7/loot.bin
+				</Representation>
+			</Tile>
+			<Tile id="8">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_8/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_8/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_8/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_8/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_8/loot.bin
+				</Representation>
+			</Tile>
+
+			<Tile id="9">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_9/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_9/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_9/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_9/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_9/loot.bin
+				</Representation>
+			</Tile>
+
+			<Tile id="10">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_10/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_10/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_10/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_10/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_10/loot.bin
+				</Representation>
+			</Tile>
+
+			<Tile id="11">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_11/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_11/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_11/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_11/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_11/loot.bin
+				</Representation>
+			</Tile>
+
+			<Tile id="12">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				GOF1/r1/bin/tile_12/loot.bin
+				</Representation>
+				<Representation id="2" binsize=1.1 CR=1.3>
+				GOF1/r2/bin/tile_12/loot.bin
+				</Representation>
+				<Representation id="3" binsize=1.1 CR=1.3>
+				GOF1/r3/bin/tile_12/loot.bin
+				</Representation>
+				<Representation id="4" binsize=1.1 CR=1.3>
+				GOF1/r4/bin/tile_12/loot.bin
+				</Representation>
+				<Representation id="5" binsize=48.2 CR=1.9>
+				GOF1/r5/bin/tile_12/loot.bin
+				</Representation>
+			</Tile>			
+		</AdaptationSet>
+		
+	</GOF>
+
+	<GOF id="30" >
+
+		<AdaptationSet id="1">
+			<Representation id="1">
+   				<Frame id="1" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="8" PointN="192470" size=5.6>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+				</Frame>
+				<Frame id="2" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="8" PointN="192470" size=5.6>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+				</Frame>
+				<Frame id="3" PointN="2581263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="8" PointN="192470" size=5.6>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+				</Frame>
+
+
+				<Frame id="10" PointN="2882040" size=45.9>
+				
+				</Frame>
+			</Representation>
+			
+			<Representation id="2">
+			<Frame id="1" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="8" PointN="192470" size=5.6>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+				</Frame>
+				<Frame id="2" PointN="2881263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="8" PointN="192470" size=5.6>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+				</Frame>
+				<Frame id="3" PointN="2581263" size=46.7>
+					<Tile id="1" PointN="118635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="2" PointN="218635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="3" PointN="358635" size=6.2>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+					<Tile id="8" PointN="192470" size=5.6>
+					$GOFID$/$RepID$/$FrameID$/basketball_player_$TileID$.ply
+					</Tile>
+				</Frame>
+
+
+				<Frame id="10" PointN="2882040" size=45.9>
+				..
+				</Frame>
+			</Representation>
+		</AdaptationSet>
+
+		                          
+		<AdaptationSet id="2">
+			<Tile id="1">
+				<Representation id="1" binsize=1.1 CR=1.3>
+				$GOFID$/$RepID$/basketball_player_$TileID$.bin
+				</Representation>
+				
+				<Representation id="5" binsize=48.2 CR=1.9>
+				$GOFID$/$RepID$/basketball_player_$TileID$.bin
+				</Representation>
+				</Tile>
+				
+			<Tile id="8">
+				
+			</Tile>
+		</AdaptationSet>
+	</GOF>
+</PD>

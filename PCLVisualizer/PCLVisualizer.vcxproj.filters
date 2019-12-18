@@ -28,6 +28,9 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Source Files\xml">
+      <UniqueIdentifier>{7e8dde6b-de9b-4f27-9fdc-ebc84a28def8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,15 +39,27 @@
     <ClCompile Include="PCLVisualizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="k4a_grabber.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>Source Files\xml</Filter>
     </ClCompile>
-    <ClCompile Include="genreate_vpc.cpp">
+    <ClCompile Include="tinystr.cpp">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="render_thread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="PCLVisualizer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="render_thread.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -59,7 +74,10 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="k4a_grabber.h">
+    <ClInclude Include="tinyxml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
