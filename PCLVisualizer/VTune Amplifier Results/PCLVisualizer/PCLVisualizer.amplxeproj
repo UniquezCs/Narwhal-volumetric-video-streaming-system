@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <connectionOption>localhost</connectionOption>
+ <rdmgr>
+  <timestamp type="u64_t">1577972475</timestamp>
+  <hostname>USER-20190708IY</hostname>
+  <os>windows</os>
+  <product>Intel® VTune™ Amplifier 2019 Update 6</product>
+  <buildNumber type="s32_t">602217</buildNumber>
+  <logicalCPUCount type="s32_t">4</logicalCPUCount>
+  <physicalCoreCount type="s32_t">4</physicalCoreCount>
+  <processorPackageCount type="s32_t">1</processorPackageCount>
+  <CPUFrequency type="s64_t">3400000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">158</CPUModel>
+  <CPUStepping type="s32_t">9</CPUStepping>
+  <CPUBrandName>Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz</CPUBrandName>
+  <isa>avx2</isa>
+ </rdmgr>
+ <contextValues type="bag"/>
+ <All_Configurations-All_Platforms>
+  <target_settings>
+   <selected_workload>
+    <localhost>launch</localhost>
+   </selected_workload>
+   <workloads>
+    <localhost>
+     <launch type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>launch</targetName>
+       <launch_app.app_to_launch>F:\Project\QT\PCLVisualizer\x64\Debug\PCLVisualizer.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>F:\Project\QT\PCLVisualizer\PCLVisualizer\</launch_app.working_folder>
+       <launch_app.app_parameters></launch_app.app_parameters>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <launch_app.environment>PATH=E:\QT\5.12.0\msvc2017_64\bin;E:\Program Files\cplex\opl\bin\x64_win64;E:\Program Files\cplex\opl\oplide\;E:\Program Files\cplex\cplex\bin\x64_win64;E:\Program Files\cplex\cpoptimizer\bin\x64_win64;C:\Lindoapi\bin\win64;C:\Program Files (x86)\NetSarang\Xshell 6\;E:\Program Files\CUDA\bin;E:\Program Files\CUDA\libnvvp;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NGX;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\PCL 1.9.1\3rdParty\Boost\lib;C:\Program Files\PCL 1.9.1\bin;C:\Program Files\PCL 1.9.1\3rdParty\FLANN\bin;C:\Program Files\PCL 1.9.1\3rdParty\Qhull\bin;C:\Program Files\PCL 1.9.1\3rdParty\OpenNI2\Redist;C:\Program Files\PCL 1.9.1\3rdParty\OpenNI2\Lib;C:\Program Files\PCL 1.9.1\3rdParty\OpenNI2\Tools;C:\Program Files\PCL 1.9.1\3rdParty\VTK\bin;C:\Program Files\CMake\bin;E:\QT\5.12.0\msvc2017_64\bin;F:\Download\cuda\bin;C:\Program Files\Azure Kinect Body Tracking SDK\sdk\windows-desktop\amd64\release\bin;C:\Program Files\TortoiseSVN\bin;C:\MinGW\bin;C:\Program Files\TortoiseHg\;E:\Program Files\Git\cmd;D:\LINGO64_17\;E:\Program Files (x86)\cplex\opl\bin\x86_win32;E:\Program Files (x86)\cplex\opl\oplide\;E:\Program Files (x86)\cplex\cplex\bin\x86_win32;E:\Program Files (x86)\cplex\cpoptimizer\bin\x86_win32;E:\Program Files\matlab2016b\runtime\win64;E:\Program Files\matlab2016b\bin;E:\Program Files\matlab2016b\polyspace\bin;F:\Download\opencv\opencv\build\x64\vc15\bin;D:\MinGW-w64\mingw64\bin;E:\python\Scripts\;E:\python\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PCL 1.9.1\bin;E:\Program Files\Microsoft VS Code\bin;E:\Program Files\matlab2016b\bin\win64;</launch_app.environment>
+       <result_directory.path>F:\Project\QT\PCLVisualizer\PCLVisualizer\VTune Amplifier Results\PCLVisualizer\r@@@{at}</result_directory.path>
+       <context>
+        <contextValue>
+         <id>allowMultipleRuns</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeKvmGuest</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeSystemWide</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cpuMask</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>customCollector</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">1000</value>
+        </contextValue>
+        <contextValue>
+         <id>enableRing</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>finalizationMode</id>
+         <value>fast</value>
+        </contextValue>
+        <contextValue>
+         <id>followChild</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>followChildStrategy</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>groupForFinalizationControl</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestKallsyms</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestModules</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmProfileGuest</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>mrteMode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>targetDurationType</id>
+         <value>short</value>
+        </contextValue>
+        <contextValue>
+         <id>targetRingBuffer</id>
+         <value type="double">0</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>launch</value>
+        </contextValue>
+        <contextValue>
+         <id>traceMpi</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>tracingMode</id>
+         <value type="null"></value>
+        </contextValue>
+       </context>
+      </workload>
+     </launch>
+    </localhost>
+   </workloads>
+  </target_settings>
+  <analysis_type_settings>
+   <selected_analysis_type_path>E:\Program Files\vtune\VTune Amplifier 2019\config\analysis_type\hotspots.cfg</selected_analysis_type_path>
+  </analysis_type_settings>
+ </All_Configurations-All_Platforms>
+</root>

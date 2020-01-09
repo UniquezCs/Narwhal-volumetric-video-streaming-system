@@ -11,7 +11,8 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLabel>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -26,9 +27,10 @@ class Ui_PCLVisualizerClass
 {
 public:
     QWidget *centralWidget;
+    QGridLayout *gridLayout;
+    QLineEdit *mainfest_url;
     QVTKWidget *qvtkWidget;
     QPushButton *button_play;
-    QLabel *label;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -37,22 +39,33 @@ public:
     {
         if (PCLVisualizerClass->objectName().isEmpty())
             PCLVisualizerClass->setObjectName(QString::fromUtf8("PCLVisualizerClass"));
-        PCLVisualizerClass->resize(829, 537);
+        PCLVisualizerClass->resize(990, 651);
         centralWidget = new QWidget(PCLVisualizerClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        gridLayout = new QGridLayout(centralWidget);
+        gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        mainfest_url = new QLineEdit(centralWidget);
+        mainfest_url->setObjectName(QString::fromUtf8("mainfest_url"));
+        mainfest_url->setMinimumSize(QSize(933, 20));
+
+        gridLayout->addWidget(mainfest_url, 0, 0, 1, 2);
+
         qvtkWidget = new QVTKWidget(centralWidget);
         qvtkWidget->setObjectName(QString::fromUtf8("qvtkWidget"));
-        qvtkWidget->setGeometry(QRect(0, 0, 831, 501));
+
+        gridLayout->addWidget(qvtkWidget, 1, 0, 1, 2);
+
         button_play = new QPushButton(centralWidget);
         button_play->setObjectName(QString::fromUtf8("button_play"));
-        button_play->setGeometry(QRect(0, 420, 41, 31));
-        label = new QLabel(centralWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(50, 430, 54, 12));
+
+        gridLayout->addWidget(button_play, 2, 0, 1, 2);
+
         PCLVisualizerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PCLVisualizerClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 829, 23));
+        menuBar->setGeometry(QRect(0, 0, 990, 23));
         PCLVisualizerClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(PCLVisualizerClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -70,7 +83,6 @@ public:
     {
         PCLVisualizerClass->setWindowTitle(QApplication::translate("PCLVisualizerClass", "PCLVisualizer", nullptr));
         button_play->setText(QApplication::translate("PCLVisualizerClass", "play", nullptr));
-        label->setText(QApplication::translate("PCLVisualizerClass", "TextLabel", nullptr));
     } // retranslateUi
 
 };

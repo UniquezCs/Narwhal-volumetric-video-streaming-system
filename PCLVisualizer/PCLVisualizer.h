@@ -42,10 +42,9 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include "PCCMetricsParameters.h"
 #include <program_options_lite.h>
 #include <tbb/tbb.h>
+#include <QCloseEvent>
 extern int pcd_number;
 using namespace std;
-
-class render_thread;
 
 
 class PCLVisualizer : public QMainWindow
@@ -59,6 +58,7 @@ public:
 	void initialVtkWidget();	//初始化vtk部件
 	void decode_thread();
 	void readbuffer_thread();
+	void writebuffer_thread();
 	void run_render_thread();
 	Ui::PCLVisualizerClass* getui() { return &ui; }
 	boost::shared_ptr<pcl::visualization::PCLVisualizer> getviewer(){ return viewer; }
@@ -69,7 +69,6 @@ private:
 	QNetworkRequest request;//请求头
 	QNetworkAccessManager manager;
 	Ui::PCLVisualizerClass ui;
-	render_thread* thread = nullptr;
 	QThreadPool threadpool;
 	boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
 signals:

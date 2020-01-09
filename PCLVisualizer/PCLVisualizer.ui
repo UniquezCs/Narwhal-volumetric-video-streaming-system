@@ -6,57 +6,43 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>829</width>
-    <height>537</height>
+    <width>990</width>
+    <height>651</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>PCLVisualizer</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QVTKWidget" name="qvtkWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>831</width>
-      <height>501</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_play">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>420</y>
-      <width>41</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>430</y>
-      <width>54</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QLineEdit" name="mainfest_url">
+      <property name="minimumSize">
+       <size>
+        <width>933</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QVTKWidget" name="qvtkWidget"/>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QPushButton" name="button_play">
+      <property name="text">
+       <string>play</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>829</width>
+     <width>990</width>
      <height>23</height>
     </rect>
    </property>

@@ -13,13 +13,11 @@ int main(int argc, char *argv[])
 	QApplication a(argc, argv);
 	PCLVisualizer w;
 	w.show();
-	//while (true) {
-	//	Sleep(33);
 
-	//	qApp->processEvents();
-	//	w.getui()->qvtkWidget->update();
-	//	w.getviewer()->resetCamera();
-	//	//w.getviewer()->updatePointCloud(w.getcloud(), "cloud");
-	//}
+	while (true)
+	{
+		qApp->processEvents();
+		w.getviewer()->updatePointCloud(w.getcloud(), "cloud");
+	}
 	return a.exec();
 }
