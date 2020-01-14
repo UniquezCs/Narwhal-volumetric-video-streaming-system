@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
 	QApplication a(argc, argv);
 	PCLVisualizer w;
 	w.show();
-
-	while (true)
-	{
-		qApp->processEvents();
-		w.getviewer()->updatePointCloud(w.getcloud(), "cloud");
-	}
+	w.setWindowTitle(QString("NarWhal"));
+	//while (true)
+	//{
+	//	
+	//	//w.getviewer()->updatePointCloud(w.getcloud(), "cloud");
+	//}
 	return a.exec();
 }

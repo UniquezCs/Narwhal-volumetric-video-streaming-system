@@ -24,6 +24,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
@@ -103,26 +104,27 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_CONSOLE;IL_STD;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;IL_STD;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtConcurrent;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibDecoder\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\arithmetic-coding\inc;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DebugInformationFormat />
+      <DebugInformationFormat>None</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <WarningLevel>Level4</WarningLevel>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalDependencies>concert.lib;cplex1290.lib;ilocplex.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5Widgets.lib;Qt5Concurrent.lib;PccLibCommon.lib;PccLibDecoder.lib;PccLibHevcParser.lib;PccLibMetrics.lib;tbb_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libboost_thread-vc141-mt-x64-1_68.lib;concert.lib;cplex1290.lib;ilocplex.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5Widgets.lib;Qt5Concurrent.lib;PccLibCommon.lib;PccLibDecoder.lib;PccLibHevcParser.lib;PccLibMetrics.lib;tbb_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>tbb_debug.lib;tbb.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
       <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtConcurrent;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibDecoder\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\arithmetic-coding\inc;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;%(AdditionalIncludeDirectories)</IncludePath>
-      <Define>_CONSOLE;IL_STD;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;%(PreprocessorDefinitions)</Define>
+      <Define>_CONSOLE;IL_STD;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;%(PreprocessorDefinitions)</Define>
     </QtMoc>
     <QtUic>
       <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
@@ -136,7 +138,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PCLVisualizer.cpp" />
-    <ClCompile Include="render_thread.cpp" />
     <ClCompile Include="tinystr.cpp" />
     <ClCompile Include="tinyxml.cpp" />
     <ClCompile Include="tinyxmlerror.cpp" />

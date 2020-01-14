@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>990</width>
-    <height>651</height>
+    <width>951</width>
+    <height>647</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,15 +25,15 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0" colspan="2">
-     <widget class="QVTKWidget" name="qvtkWidget"/>
-    </item>
     <item row="2" column="0" colspan="2">
      <widget class="QPushButton" name="button_play">
       <property name="text">
        <string>play</string>
       </property>
      </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QVTKWidget" name="qvtkWidget"/>
     </item>
    </layout>
   </widget>
@@ -42,7 +42,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>990</width>
+     <width>951</width>
      <height>23</height>
     </rect>
    </property>

@@ -51,9 +51,6 @@
     <ClCompile Include="tinyxmlerror.cpp">
       <Filter>Source Files\xml</Filter>
     </ClCompile>
-    <ClCompile Include="render_thread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="PCLVisualizer.h">

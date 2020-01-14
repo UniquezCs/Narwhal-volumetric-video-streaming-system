@@ -29,8 +29,8 @@ public:
     QWidget *centralWidget;
     QGridLayout *gridLayout;
     QLineEdit *mainfest_url;
-    QVTKWidget *qvtkWidget;
     QPushButton *button_play;
+    QVTKWidget *qvtkWidget;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -39,7 +39,7 @@ public:
     {
         if (PCLVisualizerClass->objectName().isEmpty())
             PCLVisualizerClass->setObjectName(QString::fromUtf8("PCLVisualizerClass"));
-        PCLVisualizerClass->resize(990, 651);
+        PCLVisualizerClass->resize(951, 647);
         centralWidget = new QWidget(PCLVisualizerClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -52,20 +52,20 @@ public:
 
         gridLayout->addWidget(mainfest_url, 0, 0, 1, 2);
 
-        qvtkWidget = new QVTKWidget(centralWidget);
-        qvtkWidget->setObjectName(QString::fromUtf8("qvtkWidget"));
-
-        gridLayout->addWidget(qvtkWidget, 1, 0, 1, 2);
-
         button_play = new QPushButton(centralWidget);
         button_play->setObjectName(QString::fromUtf8("button_play"));
 
         gridLayout->addWidget(button_play, 2, 0, 1, 2);
 
+        qvtkWidget = new QVTKWidget(centralWidget);
+        qvtkWidget->setObjectName(QString::fromUtf8("qvtkWidget"));
+
+        gridLayout->addWidget(qvtkWidget, 1, 0, 1, 2);
+
         PCLVisualizerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PCLVisualizerClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 990, 23));
+        menuBar->setGeometry(QRect(0, 0, 951, 23));
         PCLVisualizerClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(PCLVisualizerClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
