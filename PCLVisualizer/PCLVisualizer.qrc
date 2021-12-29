@@ -1,4 +1,6 @@
 <RCC>
-    <qresource prefix="PCLVisualizer">
+    <qresource prefix="/PCLVisualizer">
+        <file>Resources/image/播放器-播放_44.png</file>
+        <file>Resources/image/播放器-暂停_44.png</file>
     </qresource>
 </RCC>

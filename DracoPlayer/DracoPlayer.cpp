@@ -1,4 +1,4 @@
-#include "PCLVisualizer.h"
+#include "DracoPlayer.h"
 #include <qlist.h>
 #include <algorithm>
 #ifdef TIXML_USE_STL
@@ -19,14 +19,14 @@ _CrtMemState endMemState;
 #include <map>
 #include "my3d.h"
 #define PI acos(-1)
-//#ifndef abcde//ifndef做预处理，进行条件编译
-//#include <ilcplex/ilocplex.h>
+#ifndef abcde//ifndef做预处理，进行条件编译
+
 //typedef IloArray<IloIntVarArray> IntVarMatrix;
 //typedef IloArray<IloNumVarArray> NumVarMatrix;
 //typedef IloArray<IloIntArray> IntMatrix;
 //typedef IloArray<IloNumArray> NumMatrix;
-////定义各种数组
-//#endif
+//定义各种数组
+#endif
 
 using namespace pcc;
 using namespace std;
@@ -34,7 +34,7 @@ using namespace std;
 //模拟hololens2的fov
 #define FOV_Y (29)
 #define FOV_X (43)
-double fovx2fovy = tan( FOV_Y / 2 * PI / 180) / tan(FOV_X / 2 * PI / 180);//长度转换
+double fovx2fovy = tan(FOV_Y / 2 * PI / 180) / tan(FOV_X / 2 * PI / 180);//长度转换
 
 
 //xml解析出来的结构体:
@@ -102,13 +102,16 @@ map<string, string>mpd;
 object obj;//视频对象
 vector<pcl::visualization::Camera> camera;
 pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud;
+
 vector<vector<pcl::visualization::Camera>> fovs;//记录播放开始前发送每个gof时刻的视角
 //多线程的锁
 QMutex mymutex(QMutex::Recursive);
 QMutex bin_mutex(QMutex::Recursive);
 QMutex fusion_mutex(QMutex::Recursive);
 QMutex buffer_mutex(QMutex::Recursive);
+
 vector<vector<float>> xyzs;//一帧的所有坐标（包含坐标中的坐标点）
+
 vector<int> ev;//传输形式
 vector<int> cv;//是否传输
 vector<int> xv;//质量等级
@@ -118,13 +121,19 @@ vector<vector<int>> re_cv;
 vector<vector<int>> re_xv;
 vector<vector<point3>> re_fov;
 //显示视角信息:
+
 string fov_focal;
 string fov_pos;
 int scheme;//1=tile_compressed 2=tile_uncomp 3=joint,4=notile_compres  5=notile_uncomp
+
 map<int, PCCPointSet3> fusion;// frame_id->
 int tile_parse;
-int gof_tile[30] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1};//验证是否融合完成 gof_id->tilenumber
+int gof_tile[30] = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1 };//验证是否融合完成 gof_id->tilenumber
+
+
 map<QString, vector<uint8_t>> bin_store;//(tile_id,gof_id）->bin
+
+
 int bandwidth = 1000;
 
 //切块相关 为了与mpd文件中切块对应
@@ -138,6 +147,7 @@ point3* move2x(point3 *tile_xyz, float x) {
 	return temp;
 }
 
+
 point3* move2y(point3 *tile_xyz, float y) {
 
 	point3 temp[8];
@@ -150,6 +160,7 @@ point3* move2y(point3 *tile_xyz, float y) {
 	return temp;
 }
 
+
 point3* move2z(point3 *tile_xyz, float z) {
 
 	point3 temp[8];
@@ -161,6 +172,7 @@ point3* move2z(point3 *tile_xyz, float z) {
 	return temp;
 }
 
+
 void movex(tile_gof &tile_xyz, float x) {
 
 	for (int i = 0; i < 8; i++) {
@@ -168,6 +180,7 @@ void movex(tile_gof &tile_xyz, float x) {
 	}
 
 }
+
 
 void movey(tile_gof &tile_xyz, float y) {
 
@@ -177,6 +190,7 @@ void movey(tile_gof &tile_xyz, float y) {
 
 }
 
+
 void movez(tile_gof &tile_xyz, float z) {
 
 	for (int i = 0; i < 8; i++) {
@@ -184,6 +198,7 @@ void movez(tile_gof &tile_xyz, float z) {
 	}
 
 }
+
 
 //每层的切块坐标
 vector<tile_gof> gettile_seg(int j, const int n, float tile_h, float tile_x, float tile_z) {
@@ -256,6 +271,7 @@ vector<tile_gof> gettile_seg(int j, const int n, float tile_h, float tile_x, flo
 	return tiles_seg;
 }
 
+
 //读取mpd文件
 bool loadXML(const char *filename)
 {
@@ -280,19 +296,19 @@ bool loadXML(const char *filename)
 	}
 	else
 	{
-		obj.frame_n =stoi( root->Attribute("frames"));
+		obj.frame_n = stoi(root->Attribute("frames"));
 		obj.gof_n = stoi(root->Attribute("GOF"));
 		obj.cuboid_n = stoi(root->Attribute("n"));
 		obj.cuboid_m = stoi(root->Attribute("m"));
 		obj.flag = stoi(root->Attribute("flag"));
-		obj.baseurl = root->Attribute("BaseURL");	
+		obj.baseurl = root->Attribute("BaseURL");
 	}
 	// 遍历子节点
 	for (tinyxml2::XMLElement *elem = doc.FirstChildElement("GOF"); elem != NULL; elem = elem->NextSiblingElement())
 	{
 		// 获取元素名
 		gof gof_tmp;
-		gof_tmp.gof_id =stoi(elem->Attribute("id"));
+		gof_tmp.gof_id = stoi(elem->Attribute("id"));
 		gof_tmp.minx = stoi(elem->Attribute("minx"));
 		gof_tmp.miny = stoi(elem->Attribute("miny"));
 		gof_tmp.minz = stoi(elem->Attribute("minz"));
@@ -300,106 +316,106 @@ bool loadXML(const char *filename)
 		gof_tmp.maxy = stoi(elem->Attribute("maxy"));
 		gof_tmp.maxz = stoi(elem->Attribute("maxz"));
 
-			//判断adp类型
-			for (tinyxml2::XMLElement *AdaptationSet = elem->FirstChildElement("AdaptationSet"); AdaptationSet != NULL; AdaptationSet = AdaptationSet->NextSiblingElement()) {
-				string adp_id = AdaptationSet->Attribute("id");
-				// 未压缩的点云信息
-				if (adp_id._Equal("1")) {
-					for (tinyxml2::XMLElement *Rep = AdaptationSet->FirstChildElement(); Rep != NULL; Rep = Rep->NextSiblingElement()) {
-						string r_level = Rep->Attribute("id");
-						for (tinyxml2::XMLElement *frame = Rep->FirstChildElement(); frame != NULL; frame = frame->NextSiblingElement()) {
-							frame_st frame_tmp;
-							frame_tmp.frame_id = stoi( frame->Attribute("id"));
-							frame_tmp.point_n = stoi(frame->Attribute("PointN"));
-							frame_tmp.r = stoi(r_level);
-							
-							for (tinyxml2::XMLElement *tile = frame->FirstChildElement(); tile != NULL; tile = tile->NextSiblingElement()) {
+		//判断adp类型
+		for (tinyxml2::XMLElement *AdaptationSet = elem->FirstChildElement("AdaptationSet"); AdaptationSet != NULL; AdaptationSet = AdaptationSet->NextSiblingElement()) {
+			string adp_id = AdaptationSet->Attribute("id");
+			// 未压缩的点云信息
+			if (adp_id._Equal("1")) {
+				for (tinyxml2::XMLElement *Rep = AdaptationSet->FirstChildElement(); Rep != NULL; Rep = Rep->NextSiblingElement()) {
+					string r_level = Rep->Attribute("id");
+					for (tinyxml2::XMLElement *frame = Rep->FirstChildElement(); frame != NULL; frame = frame->NextSiblingElement()) {
+						frame_st frame_tmp;
+						frame_tmp.frame_id = stoi(frame->Attribute("id"));
+						frame_tmp.point_n = stoi(frame->Attribute("PointN"));
+						frame_tmp.r = stoi(r_level);
 
-								frame_tile frame_tile_tmp;
-								frame_tile_tmp.point_n= stoi(tile->Attribute("PointN"));
-								frame_tile_tmp.tile_id= stoi(tile->Attribute("id"));		
-								tinyxml2::XMLNode *tile_url = tile->FirstChild();
-								frame_tile_tmp.url = obj.baseurl+tile_url->ToText()->Value();
-								frame_tmp.tiles.push_back(frame_tile_tmp);
+						for (tinyxml2::XMLElement *tile = frame->FirstChildElement(); tile != NULL; tile = tile->NextSiblingElement()) {
 
-								mpd.insert(pair<string, string>("gof" + to_string(gof_tmp.gof_id) + "adp" + adp_id + "r" + r_level + "frame" + to_string(frame_tmp.frame_id) + "tile" + to_string(frame_tile_tmp.tile_id) + "url", frame_tile_tmp.url));
-								
-							}
-							gof_tmp.frames.push_back(frame_tmp);
+							frame_tile frame_tile_tmp;
+							frame_tile_tmp.point_n = stoi(tile->Attribute("PointN"));
+							frame_tile_tmp.tile_id = stoi(tile->Attribute("id"));
+							tinyxml2::XMLNode *tile_url = tile->FirstChild();
+							frame_tile_tmp.url = obj.baseurl + tile_url->ToText()->Value();
+							frame_tmp.tiles.push_back(frame_tile_tmp);
+
+							mpd.insert(pair<string, string>("gof" + to_string(gof_tmp.gof_id) + "adp" + adp_id + "r" + r_level + "frame" + to_string(frame_tmp.frame_id) + "tile" + to_string(frame_tile_tmp.tile_id) + "url", frame_tile_tmp.url));
+
 						}
-					}
-				}
-
-				//压缩后的点云信息
-				else {
-					for (tinyxml2::XMLElement *tile = AdaptationSet->FirstChildElement(); tile != NULL; tile = tile->NextSiblingElement()) {
-							
-						for (tinyxml2::XMLElement *rep = tile->FirstChildElement(); rep != NULL; rep = rep->NextSiblingElement()) {
-							tile_gof tile_gof_tmp;
-							tile_gof_tmp.tile_id = stoi(tile->Attribute("id"));
-							tile_gof_tmp.r= stoi(rep->Attribute("id"));					
-							tinyxml2::XMLNode *tile_url = rep->FirstChild();
-							tile_gof_tmp.url = obj.baseurl+tile_url->ToText()->Value();
-							gof_tmp.tiles.push_back(tile_gof_tmp);
-							mpd.insert(pair<string, string>("gof" + to_string(gof_tmp.gof_id) + "adp" + adp_id + "r" + to_string(tile_gof_tmp.r) + "tile" + to_string(tile_gof_tmp.tile_id) + "url", tile_gof_tmp.url));
-						}
+						gof_tmp.frames.push_back(frame_tmp);
 					}
 				}
 			}
 
-			//解析每个tile的八个顶点
-			size_t relativexyz[3];
-			vector<tile_gof> tiles;
-			int tile_number = obj.cuboid_n * obj.cuboid_n*obj.cuboid_m;//块数
-			float relativex = gof_tmp.maxx - gof_tmp.minx;
-			float relativey = gof_tmp.maxy - gof_tmp.miny;
-			float relativez = gof_tmp.maxz - gof_tmp.minz;
-			//flag=1表示以xy平面为水平面
-			if (obj.flag == 1) {
-				//
-			}
-			else if (obj.flag == 2) {
-				//
-			}
-			else if (obj.flag == 3) {
-				float tile_z = (relativez / obj.cuboid_n);
-				float tile_x = (relativex / obj.cuboid_n);
-				float tile_h = (relativey / obj.cuboid_m);
-				//获取每层的切块
-				for (int i = 0; i < obj.cuboid_m; i++) {
-					//获取该层切块
-					vector<tile_gof> tile_seg = gettile_seg(i, obj.cuboid_n, tile_h, tile_x, tile_z);
-
-					for (int k = 0; k < obj.cuboid_n*obj.cuboid_n; k++) {
-						movex(tile_seg[k], gof_tmp.minx);
-						movey(tile_seg[k], gof_tmp.miny);
-						movez(tile_seg[k], gof_tmp.minz);
-
-						double focalx=0;
-						double focaly=0;
-						double focalz=0;
-
-						for (int j = 0; j < 8; j++) {
-							gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).points[j].x = tile_seg[k].points[j].x;
-							gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).points[j].y = tile_seg[k].points[j].y;
-							gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).points[j].z = tile_seg[k].points[j].z;
-							focalx += tile_seg[k].points[j].x;
-							focaly += tile_seg[k].points[j].y;
-							focalz += tile_seg[k].points[j].z;
-
-						}					
-						gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).focal.x = focalx / 8;
-						gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).focal.y = focaly / 8;
-						gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).focal.z = focalz / 8;	
-					}
-				}
-			}
+			//压缩后的点云信息
 			else {
-				//error input
+				for (tinyxml2::XMLElement *tile = AdaptationSet->FirstChildElement(); tile != NULL; tile = tile->NextSiblingElement()) {
+
+					for (tinyxml2::XMLElement *rep = tile->FirstChildElement(); rep != NULL; rep = rep->NextSiblingElement()) {
+						tile_gof tile_gof_tmp;
+						tile_gof_tmp.tile_id = stoi(tile->Attribute("id"));
+						tile_gof_tmp.r = stoi(rep->Attribute("id"));
+						tinyxml2::XMLNode *tile_url = rep->FirstChild();
+						tile_gof_tmp.url = obj.baseurl + tile_url->ToText()->Value();
+						gof_tmp.tiles.push_back(tile_gof_tmp);
+						mpd.insert(pair<string, string>("gof" + to_string(gof_tmp.gof_id) + "adp" + adp_id + "r" + to_string(tile_gof_tmp.r) + "tile" + to_string(tile_gof_tmp.tile_id) + "url", tile_gof_tmp.url));
+					}
+				}
 			}
-			obj.gofs.push_back(gof_tmp);
 		}
-	
+
+		//解析每个tile的八个顶点
+		size_t relativexyz[3];
+		vector<tile_gof> tiles;
+		int tile_number = obj.cuboid_n * obj.cuboid_n*obj.cuboid_m;//块数
+		float relativex = gof_tmp.maxx - gof_tmp.minx;
+		float relativey = gof_tmp.maxy - gof_tmp.miny;
+		float relativez = gof_tmp.maxz - gof_tmp.minz;
+		//flag=1表示以xy平面为水平面
+		if (obj.flag == 1) {
+			//
+		}
+		else if (obj.flag == 2) {
+			//
+		}
+		else if (obj.flag == 3) {
+			float tile_z = (relativez / obj.cuboid_n);
+			float tile_x = (relativex / obj.cuboid_n);
+			float tile_h = (relativey / obj.cuboid_m);
+			//获取每层的切块
+			for (int i = 0; i < obj.cuboid_m; i++) {
+				//获取该层切块
+				vector<tile_gof> tile_seg = gettile_seg(i, obj.cuboid_n, tile_h, tile_x, tile_z);
+
+				for (int k = 0; k < obj.cuboid_n*obj.cuboid_n; k++) {
+					movex(tile_seg[k], gof_tmp.minx);
+					movey(tile_seg[k], gof_tmp.miny);
+					movez(tile_seg[k], gof_tmp.minz);
+
+					double focalx = 0;
+					double focaly = 0;
+					double focalz = 0;
+
+					for (int j = 0; j < 8; j++) {
+						gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).points[j].x = tile_seg[k].points[j].x;
+						gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).points[j].y = tile_seg[k].points[j].y;
+						gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).points[j].z = tile_seg[k].points[j].z;
+						focalx += tile_seg[k].points[j].x;
+						focaly += tile_seg[k].points[j].y;
+						focalz += tile_seg[k].points[j].z;
+
+					}
+					gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).focal.x = focalx / 8;
+					gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).focal.y = focaly / 8;
+					gof_tmp.tiles.at(obj.cuboid_n*obj.cuboid_n*i + k).focal.z = focalz / 8;
+				}
+			}
+		}
+		else {
+			//error input
+		}
+		obj.gofs.push_back(gof_tmp);
+	}
+
 	// 清理内存
 	doc.Clear();
 	return true;
@@ -474,7 +490,7 @@ bool loadXML_notile(const char *filename) {
 					notile.url = obj.baseurl + url->ToText()->Value();
 					mpd.insert(pair<string, string>("gof" + to_string(gof_tmp.gof_id) + "adp" + adp_id + "r" + to_string(notile.r) + "url", notile.url));
 					gof_tmp.notiles.push_back(notile);
-				}			
+				}
 			}
 		}
 		obj.gofs.push_back(gof_tmp);
@@ -487,43 +503,43 @@ bool loadXML_notile(const char *filename) {
 
 
 //构造函数
-PCLVisualizer::PCLVisualizer(QWidget *parent)
+DracoPlayer::DracoPlayer(QWidget *parent)
 {
 	ui.setupUi(this);
 	threadpool.setMaxThreadCount(4);//线程池
 	initialVtkWidget();
 
 	/*******************************************连接按钮信号和槽************************************************/
-	connect(ui.button_play_Tile, SIGNAL(clicked()), this, SLOT(download()));
-	connect(ui.button_play_notile, SIGNAL(clicked()), this, SLOT(download2()));
-	
+	//connect(ui.button_play_Tile, SIGNAL(clicked()), this, SLOT(download()));
+	//connect(ui.button_play_notile, SIGNAL(clicked()), this, SLOT(download2()));
+
 	/******************************************************??*************************************************/
 	connect(this, SIGNAL(siggsend()), this, SLOT(send()));
 	connect(this, SIGNAL(siggsend2()), this, SLOT(send2()));
-	connect(this, SIGNAL(sig_ply2fusion(string , PCCPointSet3 ,int,int)), this, SLOT(frame2xyzrgb(string, PCCPointSet3,int,int)));
+	connect(this, SIGNAL(sig_ply2fusion(string, PCCPointSet3, int, int)), this, SLOT(frame2xyzrgb(string, PCCPointSet3, int, int)));
 	connect(this, SIGNAL(sig_ply2fusion_add(string, &PCCPointSet3, int, int)), this, SLOT(frame2xyzrgb_add(string, PCCPointSet3, int, int)));
 
 	/******************************************下载完成后的对应槽*******************************************/
 	connect(&manager, SIGNAL(finished(QNetworkReply *)), this, SLOT(replyFinished(QNetworkReply *)));
-	connect(&manager2, SIGNAL(finished(QNetworkReply *)), this, SLOT(replyFinished2(QNetworkReply *)));	
+	connect(&manager2, SIGNAL(finished(QNetworkReply *)), this, SLOT(replyFinished2(QNetworkReply *)));
 }
 
 
-PCLVisualizer::~PCLVisualizer()
+DracoPlayer::~DracoPlayer()
 {
 	delete &ui;
 }
 
 
-void PCLVisualizer::initialVtkWidget()
+void DracoPlayer::initialVtkWidget()
 {
 	cloud.reset(new pcl::PointCloud<pcl::PointXYZRGB>);
-	viewer.reset(new pcl::visualization::PCLVisualizer("NarWhal",false));
+	viewer.reset(new pcl::visualization::PCLVisualizer("NarWhal", false));
 	viewer->addPointCloud(cloud, "cloud");
 	ui.qvtkWidget->SetRenderWindow(viewer->getRenderWindow());
 	viewer->setupInteractor(ui.qvtkWidget->GetInteractor(), ui.qvtkWidget->GetRenderWindow());
-	viewer->addText("", 5, 75,40,255,255,255,"tile_compressed");
-	viewer->addText("", 5, 75, 40, 255, 255, 255,"tile_uncompressed");
+	viewer->addText("", 5, 75, 40, 255, 255, 255, "tile_compressed");
+	viewer->addText("", 5, 75, 40, 255, 255, 255, "tile_uncompressed");
 	viewer->addText("", 5, 75, 40, 255, 255, 255, "current_gof");
 	viewer->addText("", 5, 75, 40, 255, 255, 255, "buffer_size");
 
@@ -562,7 +578,7 @@ vector<vector<float>> frame2xyz(string frame) {
 
 
 //string类型的point转化为positon和color
-bool getXYZRGB(string point,PCCPoint3D &position,PCCColor3B &color) {
+bool getXYZRGB(string point, PCCPoint3D &position, PCCColor3B &color) {
 	int pos_block = 0;
 	vector<int16_t> x_y_z;
 	vector<uint8_t> r_g_b;
@@ -570,44 +586,44 @@ bool getXYZRGB(string point,PCCPoint3D &position,PCCColor3B &color) {
 	for (int i = 0; i < 6; i++) {
 		xyzrgb[i] = stof(point.substr(pos_block, point.find(' ', pos_block) - pos_block));
 		pos_block = point.find(' ', pos_block) + 1;
-	
+
 	}
 	PCCPoint3D a(xyzrgb[0], xyzrgb[1], xyzrgb[2]);
-	PCCColor3B b(xyzrgb[3], xyzrgb[4], xyzrgb[5]);	
+	PCCColor3B b(xyzrgb[3], xyzrgb[4], xyzrgb[5]);
 	position = a;
-	color = b;	
+	color = b;
 	return true;
 }
 
 
 //下载的ply形式点云直接放入fusion
-int PCLVisualizer::frame2xyzrgb(string ply,int gof_id,int frame_id,int is_tile) {	
-		PCCPointSet3 frame;
-		frame.clear();
-		size_t n_point = count(ply.begin(), ply.end(), '\r');//点个数
-		size_t offset = 0;
-		string point;
-		PCCPoint3D position;
-		fusion_mutex.lock();
-		PCCColor3B color;
-		for (size_t i = 0; i < n_point; i++) {
-			point = ply.substr(offset, ply.find('\r', offset) - offset);
-			offset = ply.find('\r', offset + 2) + 2;
-			getXYZRGB(point, position, color);
-			frame.addPoint(position, color);
-		}
-		fusion.insert(pair<int, PCCPointSet3>(frame_id, frame));
-		fusion_mutex.unlock();
-		gof_tile[gof_id - 1]--;
-		if (gof_tile[gof_id - 1] == 0) {
-			QtConcurrent::run(&threadpool, this, &PCLVisualizer::writebuffer_thread, is_tile);
-		}
+int DracoPlayer::frame2xyzrgb(string ply, int gof_id, int frame_id, int is_tile) {
+	PCCPointSet3 frame;
+	frame.clear();
+	size_t n_point = count(ply.begin(), ply.end(), '\r');//点个数
+	size_t offset = 0;
+	string point;
+	PCCPoint3D position;
+	fusion_mutex.lock();
+	PCCColor3B color;
+	for (size_t i = 0; i < n_point; i++) {
+		point = ply.substr(offset, ply.find('\r', offset) - offset);
+		offset = ply.find('\r', offset + 2) + 2;
+		getXYZRGB(point, position, color);
+		frame.addPoint(position, color);
+	}
+	fusion.insert(pair<int, PCCPointSet3>(frame_id, frame));
+	fusion_mutex.unlock();
+	gof_tile[gof_id - 1]--;
+	if (gof_tile[gof_id - 1] == 0) {
+		QtConcurrent::run(&threadpool, this, &DracoPlayer::writebuffer_thread, is_tile);
+	}
 	return 1;
 }
 
 
 //传输原始
-int PCLVisualizer::frame2xyzrgb2(string ply, int gof_id, int frame_id) {
+int DracoPlayer::frame2xyzrgb2(string ply, int gof_id, int frame_id) {
 
 	PCCPointSet3 frame;
 	frame.clear();
@@ -618,7 +634,7 @@ int PCLVisualizer::frame2xyzrgb2(string ply, int gof_id, int frame_id) {
 	PCCColor3B color;
 	for (size_t i = 0; i < n_point; i++) {
 		point = ply.substr(offset, ply.find('\n', offset) - offset);
-		offset = ply.find('\n', offset + 1) +1;
+		offset = ply.find('\n', offset + 1) + 1;
 		getXYZRGB(point, position, color);
 		frame.addPoint(position, color);
 	}
@@ -628,33 +644,33 @@ int PCLVisualizer::frame2xyzrgb2(string ply, int gof_id, int frame_id) {
 }
 
 
-int PCLVisualizer::frame2xyzrgb_add(string ply, PCCPointSet3 *frame, int gof_id, int frame_id) {
+int DracoPlayer::frame2xyzrgb_add(string ply, PCCPointSet3 *frame, int gof_id, int frame_id) {
 
-		fusion_mutex.lock();
-		size_t n_point = count(ply.begin(), ply.end(), '\r');//点个数
-		size_t offset = 0;
-		string point;
-		PCCPoint3D position;
-		PCCColor3B color;
-		for (size_t i = 0; i < n_point; i++) {
-			point = ply.substr(offset, ply.find('\r', offset) - offset);
-			offset = ply.find('\r', offset + 2) + 2;
-			getXYZRGB(point, position, color);
-			frame->addPoint(position, color);
-		}		
-		gof_tile[gof_id - 1]--;
+	fusion_mutex.lock();
+	size_t n_point = count(ply.begin(), ply.end(), '\r');//点个数
+	size_t offset = 0;
+	string point;
+	PCCPoint3D position;
+	PCCColor3B color;
+	for (size_t i = 0; i < n_point; i++) {
+		point = ply.substr(offset, ply.find('\r', offset) - offset);
+		offset = ply.find('\r', offset + 2) + 2;
+		getXYZRGB(point, position, color);
+		frame->addPoint(position, color);
+	}
+	gof_tile[gof_id - 1]--;
 
-		fusion_mutex.unlock();
-		if (gof_tile[gof_id - 1] == 0) {
-			QtConcurrent::run(&threadpool, this, &PCLVisualizer::writebuffer_thread,1);
-		}
+	fusion_mutex.unlock();
+	if (gof_tile[gof_id - 1] == 0) {
+		QtConcurrent::run(&threadpool, this, &DracoPlayer::writebuffer_thread, 1);
+	}
 
 	return 1;
 }
 
 
 //将所得的x,e变量转化成对应的tile url
-vector<string> tile_choose(vector<int> x, vector<int> e, map<string,string> mdp,const int current_gof,vector<string> &tile_id,vector<int> &frame_id) {
+vector<string> tile_choose(vector<int> x, vector<int> e, map<string, string> mdp, const int current_gof, vector<string> &tile_id, vector<int> &frame_id) {
 
 	vector<string> tiles;
 	map<int, vector<int>> tile_info;
@@ -669,7 +685,7 @@ vector<string> tile_choose(vector<int> x, vector<int> e, map<string,string> mdp,
 		int r = 0;
 		for (int j = 0; j < 5; j++) {
 
-			if (x[12*j+i] == 1) {
+			if (x[12 * j + i] == 1) {
 				r = j + 1;
 				break;
 			}
@@ -688,32 +704,32 @@ vector<string> tile_choose(vector<int> x, vector<int> e, map<string,string> mdp,
 
 	}
 	//tile_info转化为mpd中的键
-		for (iter = tile_info.begin(); iter != tile_info.end(); iter++) {
-			int tile_id=iter->first+1;
-			int form = iter->second.at(1);
-			int r=iter->second.at(0);
-			
-			//bin形式
-			if (form == 1) {
+	for (iter = tile_info.begin(); iter != tile_info.end(); iter++) {
+		int tile_id = iter->first + 1;
+		int form = iter->second.at(1);
+		int r = iter->second.at(0);
 
-				string tile_url = "gof" + to_string(current_gof) + "adp2"+"r"+to_string(r)+"tile"+to_string(tile_id)+"url";
-				urls.push_back(tile_url);
-				tiles_url.insert(pair<int, vector<string>>(tile_id, urls));
-				frame_id.push_back(1);
-			}
-			//ply
-			else {
-				for (int i = 0; i < 10; i++) {
+		//bin形式
+		if (form == 1) {
 
-					string tile_url = "gof" + to_string(current_gof) + "adp1" + "r" + to_string(r) + "frame" + to_string(i + 1) + "tile" + to_string(tile_id) + "url";
-					urls.push_back(tile_url);
-					frame_id.push_back(i+1);
-				}
-				tiles_url.insert(pair<int, vector<string>>(tile_id, urls));		
-			}			
-			urls.clear();		
+			string tile_url = "gof" + to_string(current_gof) + "adp2" + "r" + to_string(r) + "tile" + to_string(tile_id) + "url";
+			urls.push_back(tile_url);
+			tiles_url.insert(pair<int, vector<string>>(tile_id, urls));
+			frame_id.push_back(1);
 		}
-	
+		//ply
+		else {
+			for (int i = 0; i < 10; i++) {
+
+				string tile_url = "gof" + to_string(current_gof) + "adp1" + "r" + to_string(r) + "frame" + to_string(i + 1) + "tile" + to_string(tile_id) + "url";
+				urls.push_back(tile_url);
+				frame_id.push_back(i + 1);
+			}
+			tiles_url.insert(pair<int, vector<string>>(tile_id, urls));
+		}
+		urls.clear();
+	}
+
 	//匹配mpd中键对应值
 	map<int, vector<string>>::iterator tiles_url_iter;//tile)id->simpleurl
 	map<string, string>::iterator mpd_iter;// simleurl->url
@@ -721,21 +737,21 @@ vector<string> tile_choose(vector<int> x, vector<int> e, map<string,string> mdp,
 		vector<string>::iterator tile_iter;//simpleurl
 		for (tile_iter = tiles_url_iter->second.begin(); tile_iter != tiles_url_iter->second.end(); tile_iter++) {
 			mpd_iter = mpd.find(*tile_iter);
-				//有对应项
-			if (mpd_iter!=mpd.end()) {
+			//有对应项
+			if (mpd_iter != mpd.end()) {
 
 				string tile_url = mpd_iter->second;
 				tile_id.push_back(to_string(tiles_url_iter->first));
 				request.push_back(tile_url);
 			}
-		}	
+		}
 	}
-		return request;
+	return request;
 }
 
 
-vector<string> tile_choose_notile(vector<int> x, vector<int> e, map<string, string> mdp, const int current_gof,vector<int> &frame_id) {
-	
+vector<string> tile_choose_notile(vector<int> x, vector<int> e, map<string, string> mdp, const int current_gof, vector<int> &frame_id) {
+
 	vector<string> tiles;
 	map<int, vector<int>>::iterator iter;
 	map<int, vector<string>> tiles_url;
@@ -756,14 +772,14 @@ vector<string> tile_choose_notile(vector<int> x, vector<int> e, map<string, stri
 		r_form.push_back(r);
 		r_form.push_back(form);
 	}
-	
+
 	//tile_info转化为mpd中的键
 	int re = r_form[0];
 	int form = r_form[1];
-	
+
 	//bin形式
 	if (form == 1) {
-		string tile_url = "gof" + to_string(current_gof) + "adp2" + "r" + to_string(re)  + "url";
+		string tile_url = "gof" + to_string(current_gof) + "adp2" + "r" + to_string(re) + "url";
 		urls.push_back(tile_url);
 		frame_id.push_back(1);
 	}
@@ -784,7 +800,7 @@ vector<string> tile_choose_notile(vector<int> x, vector<int> e, map<string, stri
 		if (mpd_iter != mpd.end()) {
 			string tile_url = mpd_iter->second;
 			request.push_back(tile_url);
-		}		
+		}
 	}
 	return request;
 }
@@ -834,18 +850,21 @@ bool is_tileinfov(pcl::visualization::Camera ca, point3 p, point3 &pt_pos, point
 	point3 vec_ty3 = subt(pty3, p);
 	point3 vec_ty4 = subt(pty4, p);
 
-	
+
 	if ((dmult(vec_ty3, vec_ty4) <= 0) && (dmult(vec_ty1, vec_ty2) <= 0)) {
 		return true;
 	}
 	else {
+
 		return false;
 	}
+
+
 }
 
 
 //maxQOE求解
-//bool maxQoE(double bandwidth, double Buffersize,vector<int>& xx,vector<int> &ee,vector<int> c,size_t kk,int scheme) {
+//bool maxQoE(double bandwidth, double Buffersize, vector<int>& xx, vector<int> &ee, vector<int> c, size_t kk, int scheme) {
 //
 //	IloEnv env;//定义环境
 //	IloModel model(env);//定义模型
@@ -945,7 +964,7 @@ bool is_tileinfov(pcl::visualization::Camera ca, point3 p, point3 &pt_pos, point
 //				A[r][k] = 0;
 //			}
 //			else {
-//				A[r][k] = (1.0 / dist[k])*(r + 1) * 8* w[k];
+//				A[r][k] = (1.0 / dist[k])*(r + 1) * 8 * w[k];
 //			}
 //		}
 //	}
@@ -990,8 +1009,8 @@ bool is_tileinfov(pcl::visualization::Camera ca, point3 p, point3 &pt_pos, point
 //	{
 //		x[i] = IloIntVarArray(env, 12, 0, 1);
 //	}
-//	
-//	
+//
+//
 //
 //	IloExpr v1(env);//目标函数
 //	IloExpr v2(env);//x[1][i]之和为1
@@ -1020,7 +1039,7 @@ bool is_tileinfov(pcl::visualization::Camera ca, point3 p, point3 &pt_pos, point
 //
 //
 //	if (scheme == 1) {
-//		int e[12] = {1,1,1,1,1,1,1,1,1,1,1,1};
+//		int e[12] = { 1,1,1,1,1,1,1,1,1,1,1,1 };
 //
 //		//Td
 //		for (size_t k = 0; k < K; k++)
@@ -1107,7 +1126,7 @@ bool is_tileinfov(pcl::visualization::Camera ca, point3 p, point3 &pt_pos, point
 //
 //	}
 //	else if (scheme == 2) {
-//		int e[12] = {0};
+//		int e[12] = { 0 };
 //		//Td
 //		for (size_t k = 0; k < K; k++)
 //		{
@@ -1455,7 +1474,7 @@ bool is_tileinfov(pcl::visualization::Camera ca, point3 p, point3 &pt_pos, point
 //
 //
 //	if (scheme == 4) {
-//		int e[1] = {1};
+//		int e[1] = { 1 };
 //
 //		//Td
 //		for (size_t k = 0; k < K; k++)
@@ -1627,117 +1646,63 @@ bool is_tileinfov(pcl::visualization::Camera ca, point3 p, point3 &pt_pos, point
 
 
 //解码线程
-void PCLVisualizer::decode_thread(int is_tile) {
-	        //开启解码线程
-			if (bin_store.size() > 0) {
-				bin_mutex.lock();
-				auto iterbin = bin_store.begin();
-				QString gof_tiles = iterbin->first;
-				QRegExp rx(QString("(\\d+)_(\\d+)"));
-				int pos = gof_tiles.indexOf(rx);
-				int gof_id = rx.cap(1).toInt();
-				int tile_id = rx.cap(2).toInt();
-				PCCDecoderParameters decoderParams;
-				PCCMetricsParameters metricsParams;
-				PCCBitstream bitstream;
-				bitstream.initialize(iterbin->second);
-				if (!bitstream.readHeader()) { return ; }
-				size_t      frameNumber = decoderParams.startFrameNumber_;
-				PCCMetrics  metrics;
-				PCCChecksum checksum;
-				metrics.setParameters(metricsParams);
-				checksum.setParameters(metricsParams);
-				std::vector<std::vector<uint8_t>> checksumsRec, checksumsDec;
-				//if (metricsParams.computeChecksum_) { checksum.read(decoderParams.compressedStreamPath_); }
-				PCCDecoder decoder;
-				decoder.setParameters(decoderParams);
-				while (bitstream.size() < bitstream.capacity()) {
-					PCCGroupOfFrames reconstructs;
-					PCCContext       context;
-					int ret = decoder.decode(bitstream, context, reconstructs);//关键
-					if (ret) { return ; }
-					for (auto iter = reconstructs.begin(); iter != reconstructs.end(); iter++) {
-						int frame_id = frameNumber++ - 1050;//修改
-						//itermap = fusion[gof_id - 1].find(frame_id);
-						auto itermap = fusion.find(frame_id);
-						if (itermap != fusion.end()) {
-							//已有,一个个加
-							vector<PCCPoint3D> points = iter->getPositions();						
-							vector<PCCPoint3D>::iterator iterpoint;
-							int i = 0;
-							for (iterpoint = points.begin(); iterpoint != points.end(); iterpoint++) {
-								fusion_mutex.lock();
-								itermap->second.addPoint(*iterpoint,iter->getColor(i++));
-								fusion_mutex.unlock();
-							}
-							gof_tile[gof_id - 1]--;
-							if (gof_tile[gof_id - 1] == 0) {
-							
-								QtConcurrent::run(&threadpool,this,&PCLVisualizer::writebuffer_thread,is_tile);
-							}
-						}
-						else {
-							//第一次
-							fusion_mutex.lock();
-							fusion.insert(pair<int, PCCPointSet3>(frame_id, *iter));
-							fusion_mutex.unlock();
-							gof_tile[gof_id - 1]--;
-							if (gof_tile[gof_id - 1] == 0) {
-								QtConcurrent::run(&threadpool, this, &PCLVisualizer::writebuffer_thread,is_tile);
-							}
-						}
-					}
-				}
-				bin_store.erase(iterbin);
-				bin_mutex.unlock();
-			}	
+void DracoPlayer::decode_thread(int is_tile) {
+	//开启解码线程
+	if (bin_store.size() > 0) {
+		bin_mutex.lock();
+		
+		
+		bin_mutex.unlock();
+	}
 }
 
 
 //写入buffer的线程
-int PCLVisualizer::writebuffer_thread(int is_tile) {
-		int *p; int *e;
-		p = std::find(gof_tile, gof_tile + 30, 0);
-		e = std::find(gof_tile, gof_tile + 30, 1000);
-		//有归零的，即该gof融合完毕了
-		if (p != gof_tile + 30) {
-			buffer_mutex.lock();
-			fusion_mutex.lock();
-			buffer.push(fusion);//写入buffer
-			fusion_mutex.unlock();
-			buffer_mutex.unlock();
-			fusion.clear();//清空			
-			int pos = p - gof_tile+1;//第几个gof
-			*p = 77;//还原
-			if (pos == 30) {
-				return 0;
-			}
-			if (is_tile) {
-				siggsend();// 存疑 是否有必要
-			}
-			else {
-				siggsend2();
-			}		
+int DracoPlayer::writebuffer_thread(int is_tile) {
+	int *p; int *e;
+	p = std::find(gof_tile, gof_tile + 30, 0);
+	e = std::find(gof_tile, gof_tile + 30, 1000);
+	//有归零的，即该gof融合完毕了
+	if (p != gof_tile + 30) {
+		buffer_mutex.lock();
+		fusion_mutex.lock();
+		buffer.push(fusion);//写入buffer
+		fusion_mutex.unlock();
+		buffer_mutex.unlock();
+		fusion.clear();//清空			
+		int pos = p - gof_tile + 1;//第几个gof
+		*p = 77;//还原
+		if (pos == 30) {
+			return 0;
 		}
-		else if (e != gof_tile + 30) {//没有需要传输的切块
-			*e=77;
-			if (is_tile) {
-				siggsend();
-			}
-			else {
-				siggsend2();
-			}
+		if (is_tile) {
+			siggsend();
 		}
-		return 1;
+		else {
+			siggsend2();
+		}
+
+	}
+	else if (e != gof_tile + 30) {//没有需要传输的切块
+		*e = 77;
+		if (is_tile) {
+			siggsend();
+		}
+		else {
+			siggsend2();
+		}
+	}
+	return 1;
 }
 
 
 //读取buffer的线程
-void PCLVisualizer::readbuffer_thread() {
+void DracoPlayer::readbuffer_thread() {
 	QtConcurrent::run([this]() {
 		while (true)
 		{
 			if (buffer.size() > 0) {
+
 				//map<int, PCCPointSet3>::iterator iter;
 				buffer_mutex.lock();
 				for (auto iter = buffer.front().begin(); iter != buffer.front().end(); iter++) {
@@ -1748,8 +1713,8 @@ void PCLVisualizer::readbuffer_thread() {
 					cloud->height = 1;
 					//cloud->is_dense = false;
 					cloud->points.resize(point_n);
-					
-					for (auto i = 0; i <point_n;i++) {
+
+					for (auto i = 0; i < point_n; i++) {
 						cloud->points[i].x = iter->second.getPositions()[i].x();
 						cloud->points[i].y = iter->second.getPositions()[i].y();
 						cloud->points[i].z = iter->second.getPositions()[i].z();
@@ -1757,25 +1722,30 @@ void PCLVisualizer::readbuffer_thread() {
 						cloud->points[i].g = iter->second.getColor(i).g();
 						cloud->points[i].b = iter->second.getColor(i).b();
 						/*cloud->points[j].x;
-						cloud->points[j].y; 
-						cloud->points[j].z;*/	
+						cloud->points[j].y;
+						cloud->points[j].z;*/
+
+
 					}
 					mymutex.lock();
-					viewer->updatePointCloud(cloud);		
+					viewer->updatePointCloud(cloud);
 					mymutex.unlock();
 				}
 				buffer.pop();
-				buffer_mutex.unlock();	
+				buffer_mutex.unlock();
+
 			}
 		}
 	});
 }
 
+
 //tile方案
-void PCLVisualizer::download() {
+void DracoPlayer::download() {
 	//下载manifest.xml
-	request.setUrl(QUrl(ui.mainfest_url->text()+ "?n="+"mainfest_tile"));
+	request.setUrl(QUrl(ui.mainfest_url->text() + "?n=" + "mainfest_tile"));
 	manager.get(request);
+
 	loadXML("mainfest_tile.xml");//阻塞等待
 	viewer->setCameraPosition(250, 500, 1000, 250, 500, 300, 0, 0, 0);//初始视角
 	viewer->getCameras(camera);
@@ -1785,10 +1755,10 @@ void PCLVisualizer::download() {
 	scheme = ui.scheme->text().toInt();
 
 	int tile_n = obj.cuboid_n*obj.cuboid_n*obj.cuboid_m;//切块数
-	
-	int tile_trans_n=0;//需要传输的切块数目
 
-	int tmp=0;
+	int tile_trans_n = 0;//需要传输的切块数目
+
+	int tmp = 0;
 
 	viewer->getCameras(camera);
 
@@ -1796,25 +1766,25 @@ void PCLVisualizer::download() {
 
 	//验证每个tile是否在fov内
 	for (int n = 0; n < tile_n; n++) {
-			for (int vertex = 0; vertex < 8; vertex++) {
-				if (is_tileinfov(camera.front(), obj.gofs.at(current_gof - 1).tiles.at(n).points[vertex], pt_pos, focal_1,focal_2, focal_3, focal_4)) {
-					cv.push_back(1);
-					tile_trans_n++;
-					break;
-				}
-				else {
-					if (vertex == 7) {//若8个顶点都不在 判断中心点
-						 if (is_tileinfov(camera.front(), obj.gofs.at(current_gof - 1).tiles.at(n).focal, pt_pos, focal_1, focal_2, focal_3, focal_4))
-						{
-							cv.push_back(1);
-							tile_trans_n++;
-							break;
-						}
-						else cv.push_back(0);
-					}				
+		for (int vertex = 0; vertex < 8; vertex++) {
+			if (is_tileinfov(camera.front(), obj.gofs.at(current_gof - 1).tiles.at(n).points[vertex], pt_pos, focal_1, focal_2, focal_3, focal_4)) {
+				cv.push_back(1);
+				tile_trans_n++;
+				break;
+			}
+			else {
+				if (vertex == 7) {//若8个顶点都不在 判断中心点
+					if (is_tileinfov(camera.front(), obj.gofs.at(current_gof - 1).tiles.at(n).focal, pt_pos, focal_1, focal_2, focal_3, focal_4))
+					{
+						cv.push_back(1);
+						tile_trans_n++;
+						break;
+					}
+					else cv.push_back(0);
 				}
 			}
 		}
+	}
 
 	vector<point3> fovv;
 
@@ -1824,39 +1794,29 @@ void PCLVisualizer::download() {
 	re_fov.push_back(fovv);
 
 	//每次计算a,e的值
-	//maxQoE(bandwidth, buffer.size(), xv, ev, cv, tile_n,scheme);
+	//maxQoE(bandwidth, buffer.size(), xv, ev, cv, tile_n, scheme);
 
 	//仿真结果
-	for (size_t i = 0; i < 12; i++)
-	{
-		ev.push_back(0);
-	}
-
-	ev[0] = 0; ev[1] = 1; ev[2] = 0; ev[3] = 0; ev[4] = 1; 
-	ev[5] = 1; ev[6] = 0; ev[7] = 0; ev[8] = 0; ev[9] = 0;
-	ev[10] = 0; ev[11] = 0;
+	ev[0] = 0; ev[1] = 1; ev[2] = 1; ev[3] = 1; ev[4] = 0; ev[5] = 1; ev[6] = 0; ev[7] = 0; ev[8] = 0; ev[9] = 0; ev[10] = 0; ev[11] = 0;
 
 	//转换成xv
+	int a[5][12];
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 12; j++) {
-			if (i == 0) {	
-					xv.push_back(1);
-			}
-			else
-			{
-				xv.push_back(0);
-			}		
+			a[i][j] = xv[12 * i + j];
 		}
 	}
 
-	gof_tile[current_gof - 1] = tile_trans_n*(obj.frame_n/obj.gof_n);//乘每个gof包含的帧数
+	gof_tile[current_gof - 1] = tile_trans_n * (obj.frame_n / obj.gof_n);//乘每个gof包含的帧数
 	vector<string> tile_id;//每次请求ply文件和bin文件
 	vector<int> frame_id;
 
 	//通过a,e得到对应mpd得到tile地址
-	vector<string> tiles_url = tile_choose(xv, ev, mpd, current_gof,tile_id,frame_id);
-	
+
+	vector<string> tiles_url = tile_choose(xv, ev, mpd, current_gof, tile_id, frame_id);
+	int i = 0;
 	//tile_parse = gof_tile[current_gof];
+
 	//记录每次的gof
 	re_xv.push_back(xv);
 	re_cv.push_back(cv);
@@ -1866,14 +1826,13 @@ void PCLVisualizer::download() {
 	ev.clear();
 
 	//初始化fusion
-	for (int i = 1; i <= 10;i++) {
+	for (int i = 1; i <= 10; i++) {
 		PCCPointSet3 frame;
 		fusion.insert(pair<int, PCCPointSet3>(i, frame));
 	}
 
-	int i = 0;
-	for (auto tiles_url_iter : tiles_url) {
-		QString url = QString::fromStdString(tiles_url_iter);	
+	for (tiles_url_iter = tiles_url.begin(); tiles_url_iter != tiles_url.end(); tiles_url_iter++) {
+		QString url = QString::fromStdString(*tiles_url_iter);
 		QString reg = ".+(.bin)$";
 		QRegExp rx(reg);
 		bool match = rx.exactMatch(url);
@@ -1881,111 +1840,127 @@ void PCLVisualizer::download() {
 		int frame_ids = frame_id[i];
 		i++;
 		if (match) {
-			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "tile_" + QString::fromStdString(tile_ids)));		
+			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "tile_" + QString::fromStdString(tile_ids)));
+			manager.get(request);
 		}
-		else {
-			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "tile_" + QString::fromStdString(tile_ids) + "frame_" + QString::fromStdString(to_string(frame_ids))));
-		}
-		manager.get(request);
 	}
-	
+	i = 0;
+	for (tiles_url_iter = tiles_url.begin(); tiles_url_iter != tiles_url.end(); tiles_url_iter++) {
+		QString url = QString::fromStdString(*tiles_url_iter);
+		QString reg = ".+(.bin)$";
+		QRegExp rx(reg);
+		bool match = rx.exactMatch(url);
+		string tile_ids = tile_id[i];
+		int frame_ids = frame_id[i];
+		i++;
+		if (!match) {
+			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "tile_" + QString::fromStdString(tile_ids) + "frame_" + QString::fromStdString(to_string(frame_ids))));
+			manager.get(request);
+		}
+	}
+
+
+
+
+
 	current_gof++;
 
-	pcl::io::loadPLYFile("D://mpeg_dataset//ply//longdress//Ply//longdress_vox10_1146.ply", *cloud);
+	pcl::io::loadPLYFile("D://mpeg_dataset//ply//longdress//Ply//longdress_vox10_1051.ply", *cloud);
 	viewer->updatePointCloud(cloud);
 	while (true)
-	{	
-		qApp->processEvents();	
-		viewer->updateText("buffer:"+to_string(buffer.size()), 5, 225,40,125,125,155,  "buffer_size");
+	{
+		qApp->processEvents();
+
+		viewer->updateText("buffer:" + to_string(buffer.size()), 5, 225, 40, 125, 125, 155, "buffer_size");
 		//循环等待，直到加载完毕开始播放
-			if (buffer.size()==30) {//开始播放
-				viewer->removeShape("buffer_size");
-				int currentgof = 0;
-				while (buffer.size() != 0) {
-					currentgof++;
-					//viewer->setCameraPosition(fovs[currentgof - 1].front().pos[0], fovs[currentgof - 1].front().pos[1], fovs[currentgof - 1].front().pos[2], fovs[currentgof - 1].front().focal[0], fovs[currentgof - 1].front().focal[1], fovs[currentgof - 1].front().focal[2], 0, 0, 0);
-					tile_compressed.clear();
-					tile_uncompressed.clear();
-					tile_compressed = "tile_compressed:";
-					tile_uncompressed = "tile_uncompressed:";
-					int a[5][12];
-					for (int i = 0; i < 5; i++) {
-						for (int j = 0; j < 12; j++) {
-							a[i][j] = re_xv[currentgof - 1].at(12 * i + j);
+		if (buffer.size() == 30) {//开始播放
+			viewer->removeShape("buffer_size");
+			int currentgof = 0;
+			while (buffer.size() != 0) {
+				currentgof++;
+				//viewer->setCameraPosition(fovs[currentgof - 1].front().pos[0], fovs[currentgof - 1].front().pos[1], fovs[currentgof - 1].front().pos[2], fovs[currentgof - 1].front().focal[0], fovs[currentgof - 1].front().focal[1], fovs[currentgof - 1].front().focal[2], 0, 0, 0);
+				tile_compressed.clear();
+				tile_uncompressed.clear();
+				tile_compressed = "tile_compressed:";
+				tile_uncompressed = "tile_uncompressed:";
+				int a[5][12];
+				for (int i = 0; i < 5; i++) {
+					for (int j = 0; j < 12; j++) {
+						a[i][j] = re_xv[currentgof - 1].at(12 * i + j);
+					}
+				}
+				//实时显示切块信息
+				for (size_t i = 0; i < 12; i++)
+				{
+					if (re_cv[currentgof - 1].at(i) == 1) {
+						int r = 0;
+						if (re_ev[currentgof - 1].at(i) == 1) {
+
+							for (size_t j = 0; j < 5; j++)
+							{
+								if (a[j][i] == 1) {
+									r = j + 1;
+									break;
+								}
+							}
+							tile_compressed = tile_compressed + "tile_" + to_string(i) + "(r" + to_string(r) + ")";
+						}
+						else {
+							for (size_t j = 0; j < 5; j++)
+							{
+								if (a[j][i] == 1) {
+									r = j + 1;
+									break;
+								}
+							}
+							tile_uncompressed = tile_uncompressed + "tile_" + to_string(i) + "(r" + to_string(r) + ")";
 						}
 					}
-					//实时显示切块信息
-					for (size_t i = 0; i < 12; i++)
-					{
-						if (re_cv[currentgof - 1].at(i) == 1) {
-							int r = 0;
-							if (re_ev[currentgof - 1].at(i) == 1) {
+				}
+				/*viewer->removeShape("line1");
+				viewer->removeShape("line2");
+				viewer->removeShape("line3");
+				viewer->removeShape("line4");*/
+				viewer->updateText(tile_compressed, 5, 35, 25, 125, 15, 55, "tile_compressed");
+				viewer->updateText(tile_uncompressed, 5, 55, 25, 145, 75, 15, "tile_uncompressed");
+				viewer->updateText("gof:" + to_string(currentgof), 25, 505, 25, 85, 15, 15, "current_gof");
+				//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(1).x, re_fov[currentgof - 1].at(1).y, re_fov[currentgof - 1].at(1).z), "line1");
+				//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(2).x, re_fov[currentgof - 1].at(2).y, re_fov[currentgof - 1].at(2).z), "line2");
+				//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(3).x, re_fov[currentgof - 1].at(3).y, re_fov[currentgof - 1].at(3).z), "line3");
+				//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(4).x, re_fov[currentgof - 1].at(4).y, re_fov[currentgof - 1].at(4).z), "line4");
 
-								for (size_t j = 0; j < 5; j++)
-								{
-									if (a[j][i] == 1) {
-										r = j + 1;
-										break;
-									}
-								}
-								tile_compressed = tile_compressed + "tile_" + to_string(i) + "(r" + to_string(r) + ")";
-							}
-							else {
-								for (size_t j = 0; j < 5; j++)
-								{
-									if (a[j][i] == 1) {
-										r = j + 1;
-										break;
-									}
-								}
-								tile_uncompressed = tile_uncompressed + "tile_" + to_string(i) + "(r" + to_string(r) + ")";
-							}
-						}
+				for (auto iter = buffer.front().begin(); iter != buffer.front().end(); iter++) {
+					cloud->clear();
+					viewer->getCameras(camera);
+					int point_n = iter->second.getPointCount();
+					cloud->width = point_n;
+					cloud->height = 1;
+					//cloud->is_dense = false;
+					cloud->points.resize(point_n);
+					buffer_mutex.lock();
+					for (auto i = 0; i < point_n; i++) {
+						cloud->points[i].x = iter->second.getPositions()[i].x();
+						cloud->points[i].y = iter->second.getPositions()[i].y();
+						cloud->points[i].z = iter->second.getPositions()[i].z();
+						cloud->points[i].r = iter->second.getColor(i).r();
+						cloud->points[i].g = iter->second.getColor(i).g();
+						cloud->points[i].b = iter->second.getColor(i).b();
 					}
-					/*viewer->removeShape("line1");
-					viewer->removeShape("line2");
-					viewer->removeShape("line3");
-					viewer->removeShape("line4");*/
-					viewer->updateText(tile_compressed, 5, 35,25,125, 15, 55, "tile_compressed");
-					viewer->updateText(tile_uncompressed, 5, 55, 25, 145, 75, 15,"tile_uncompressed");
-					viewer->updateText("gof:" + to_string(currentgof),25, 505, 25, 85, 15, 15,"current_gof");
-					//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(1).x, re_fov[currentgof - 1].at(1).y, re_fov[currentgof - 1].at(1).z), "line1");
-					//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(2).x, re_fov[currentgof - 1].at(2).y, re_fov[currentgof - 1].at(2).z), "line2");
-					//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(3).x, re_fov[currentgof - 1].at(3).y, re_fov[currentgof - 1].at(3).z), "line3");
-					//viewer->addLine<pcl::PointXYZ, pcl::PointXYZ>(pcl::PointXYZ(re_fov[currentgof - 1].at(0).x, re_fov[currentgof - 1].at(0).y, re_fov[currentgof - 1].at(0).z), pcl::PointXYZ(re_fov[currentgof - 1].at(4).x, re_fov[currentgof - 1].at(4).y, re_fov[currentgof - 1].at(4).z), "line4");
-
-					for (auto iter = buffer.front().begin(); iter != buffer.front().end(); iter++) {				
-						cloud->clear();
-						viewer->getCameras(camera);
-						int point_n = iter->second.getPointCount();
-						cloud->width = point_n;
-						cloud->height = 1;
-						//cloud->is_dense = false;
-						cloud->points.resize(point_n);
-						buffer_mutex.lock();
-						for (auto i = 0; i < point_n; i++) {
-							cloud->points[i].x = iter->second.getPositions()[i].x();
-							cloud->points[i].y = iter->second.getPositions()[i].y();
-							cloud->points[i].z = iter->second.getPositions()[i].z();
-							cloud->points[i].r = iter->second.getColor(i).r();
-							cloud->points[i].g = iter->second.getColor(i).g();
-							cloud->points[i].b = iter->second.getColor(i).b();
-						}				
-						viewer->updatePointCloud(cloud);
-						Sleep(33);
-						qApp->processEvents();
-						ui.qvtkWidget->update();
-					}				
-					buffer.pop();
-					buffer_mutex.unlock();
-				}	
-			}					
+					viewer->updatePointCloud(cloud);
+					Sleep(33);
+					qApp->processEvents();
+					ui.qvtkWidget->update();
+				}
+				buffer.pop();
+				buffer_mutex.unlock();
+			}
+		}
 	}
 }
 
 //notile视频
-void PCLVisualizer::download2() {
-	request.setUrl(QUrl(ui.mainfest_url->text()+ "?n="+"mainfest_notile"));
+void DracoPlayer::download2() {
+	request.setUrl(QUrl(ui.mainfest_url->text() + "?n=" + "mainfest_notile"));
 	manager2.get(request);
 	cv.push_back(1);
 	int tile_n = 1;
@@ -2004,7 +1979,7 @@ void PCLVisualizer::download2() {
 
 	vector<int> frame_id;
 	vector<string>::iterator iter;
-	vector<string> urls = tile_choose_notile(xv, ev, mpd, current_gof,frame_id);
+	vector<string> urls = tile_choose_notile(xv, ev, mpd, current_gof, frame_id);
 
 	int i = 0;
 	for (iter = urls.begin(); iter != urls.end(); iter++) {
@@ -2019,12 +1994,12 @@ void PCLVisualizer::download2() {
 			manager2.get(request);
 		}
 		else {
-			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof))+ "frame_" + QString::fromStdString(to_string(frame_ids))));
+			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "frame_" + QString::fromStdString(to_string(frame_ids))));
 			manager2.get(request);
 		}
 	}
 	current_gof++;
-	//pcl::io::loadPLYFile("D://mpeg_dataset//ply//longdress//Ply//longdress_vox10_1051.ply", *cloud);
+	pcl::io::loadPLYFile("D://mpeg_dataset//ply//longdress//Ply//longdress_vox10_1051.ply", *cloud);
 	viewer->updatePointCloud(cloud);
 	while (true)
 	{
@@ -2038,7 +2013,7 @@ void PCLVisualizer::download2() {
 				currentgof++;
 				viewer->updateText("gof:" + to_string(currentgof), 25, 505, 25, 85, 15, 15, "current_gof");
 				//viewer->setCameraPosition(fovs[currentgof - 1].front().pos[0], fovs[currentgof - 1].front().pos[1], fovs[currentgof - 1].front().pos[2], fovs[currentgof - 1].front().focal[0], fovs[currentgof - 1].front().focal[1], fovs[currentgof - 1].front().focal[2], 0, 0, 0);			
-				for (auto iter = buffer.front().begin(); iter != buffer.front().end(); iter++) {			
+				for (auto iter = buffer.front().begin(); iter != buffer.front().end(); iter++) {
 					cloud->clear();
 					int point_n = iter->second.getPointCount();
 					cloud->width = point_n;
@@ -2066,7 +2041,7 @@ void PCLVisualizer::download2() {
 }
 
 
-void PCLVisualizer::send() {
+void DracoPlayer::send() {
 	int tile_n = obj.cuboid_n*obj.cuboid_n*obj.cuboid_m;
 	int tile_trans_n = 0;//需要传输的切块数目
 	int tmp = 0;
@@ -2079,7 +2054,7 @@ void PCLVisualizer::send() {
 	//检测每个tile的顶点是否在fov内
 	for (int n = 0; n < tile_n; n++) {
 		for (int vertex = 0; vertex < 8; vertex++) {
-			if (is_tileinfov(camera.front(), obj.gofs.at(current_gof - 1).tiles.at(n).points[vertex] , pt_pos, focal_1, focal_2, focal_3, focal_4)) {
+			if (is_tileinfov(camera.front(), obj.gofs.at(current_gof - 1).tiles.at(n).points[vertex], pt_pos, focal_1, focal_2, focal_3, focal_4)) {
 				cv.push_back(1);
 				tile_trans_n++;
 				break;
@@ -2103,132 +2078,112 @@ void PCLVisualizer::send() {
 	re_fov.push_back(fovv);
 	vector<string>::iterator tiles_url_iter;
 	//每次计算a,e的值
-	//maxQoE(bandwidth, buffer.size(), xv, ev, cv, tile_n,scheme);
-	for (size_t i = 0; i < 12; i++)
-	{
-		ev.push_back(0);
-	}
-	//ev[0] = 0; ev[1] = 0; ev[2] = 0; ev[3] = 0; ev[4] = 0; ev[5] = 0; ev[6] = 0; ev[7] = 0; ev[8] =1; ev[9] =1; ev[10] = 0; ev[11] = 0;
+	//maxQoE(bandwidth, buffer.size(), xv, ev, cv, tile_n, scheme);
+	ev[0] = 0; ev[1] = 1; ev[2] = 1; ev[3] = 1; ev[4] = 0; ev[5] = 0; ev[6] = 0; ev[7] = 0; ev[8] = 1; ev[9] = 1; ev[10] = 0; ev[11] = 0;
 	int a[5][12];
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 12; j++) {
-			if (i == 0) {
-				a[i][j] = 1;
-				xv.push_back(1);
-			}
-			else
-			{
-				a[i][j] = 0;
-				xv.push_back(0);
-			}
-
+			a[i][j] = xv[12 * i + j];
 		}
 	}
-	/*if (current_gof % 3 == 1) {
 
-		ev[1] = 1; ev[2] = 1;
-
-		for (size_t i = 0; i < 5; i++)
-		{
-			for (size_t j = 0; j < 12; j++)
-			{
-				if (xv[12 * i + j] == 1) {
-
-					if (j == 1) {
-						xv[j] = 1;
-						xv[12 * i + j] = 0;
-					}
-					else if (j == 3) {
-						xv[12 * 3 + j] = 1;
-						xv[12 * i + j] = 0;
-
-					}
-					else if (j == 6) {
-						xv[12 * 1 + j] = 1;
-						xv[12 * i + j] = 0;
-					}
-				}
-			}
-		}
-
-	}
-	else if (current_gof % 3 == 2) {
-		ev[2] = 1; ev[4] = 1;
-
-		for (size_t i = 0; i < 5; i++)
-		{
-			for (size_t j = 0; j < 12; j++)
-			{
-				if (xv[12 * i + j] == 1) {
-
-					if (j == 2) {
-						xv[12 * 1 + j] = 1;
-						xv[12 * i + j] = 0;
-					}
-					else if (j == 7) {
-						xv[12 * 3 + j] = 1;
-						xv[12 * i + j] = 0;
-
-					}
-					else if (j == 9) {
-						xv[12 * 3 + j] = 1;
-						xv[12 * i + j] = 0;
-					}
-				}
-			}
-		}
-	}
-	else {
-		ev[3] = 1;
-		for (size_t i = 0; i < 5; i++)
-		{
-			for (size_t j = 0; j < 12; j++)
-			{
-				if (xv[12 * i + j] == 1) {
-
-					if (j == 1) {
-						xv[12 * 0 + j] = 1;
-						xv[12 * i + j] = 0;
-					}
-					else if (j == 1) {
-						xv[12 * 3 + j] = 1;
-						xv[12 * i + j] = 0;
-
-					}
-					else if (j == 6) {
-						xv[12 * 2 + j] = 1;
-						xv[12 * i + j] = 0;
-					}
-				}
-			}
-		}
-
-
-	}*/
-
-	//for (int i = 0; i < 5; i++) {
-	//	for (int j = 0; j < 12; j++) {
-	//		a[i][j] = xv[12 * i + j];
-	//	}
-	//}
-
-	if (tile_trans_n == 0) {//如果不需要传输
-		gof_tile[current_gof - 1] =  1000;
+	if (tile_trans_n == 0) {
+		gof_tile[current_gof - 1] = 10000;
 		current_gof++;
-		QtConcurrent::run(&threadpool, this, &PCLVisualizer::writebuffer_thread, is_tile);
+		QtConcurrent::run(&threadpool, this, &DracoPlayer::writebuffer_thread, is_tile);
 		return;
 	}
 	//xv ev转化为 a e
 	gof_tile[current_gof - 1] = tile_trans_n * 10;//乘每个gof包含的帧数
-	
+
 	vector<string> tile_id;//每次请求ply文件和bin文件
 	vector<int> frame_id;
-;
+	;
 	//通过a,e得到对应mpd得到tile地址
 
 	vector<string> tiles_url = tile_choose(xv, ev, mpd, current_gof, tile_id, frame_id);
-	
-	
+
+	//if (current_gof % 3 == 1) {
+
+	//	ev[1] = 1; ev[2] = 1;
+
+	//	for (size_t i = 0; i < 5; i++)
+	//	{
+	//		for (size_t j = 0; j < 12; j++)
+	//		{
+	//			if (xv[12 * i + j] == 1) {
+
+	//				if (j == 1) {
+	//					xv[j] = 1;
+	//					xv[12 * i + j] = 0;
+	//				}
+	//				else if (j == 3) {
+	//					xv[12 * 3 + j] = 1;
+	//					xv[12 * i + j] = 0;
+
+	//				}
+	//				else if (j == 6) {
+	//					xv[12 * 1 + j] = 1;
+	//					xv[12 * i + j] = 0;
+	//				}
+	//			}
+	//		}
+	//	}
+
+	//}
+	//else if (current_gof % 3 == 2) {
+	//	ev[2] = 1; ev[4] = 1;
+
+	//	for (size_t i = 0; i < 5; i++)
+	//	{
+	//		for (size_t j = 0; j < 12; j++)
+	//		{
+	//			if (xv[12 * i + j] == 1) {
+
+	//				if (j == 2) {
+	//					xv[12 * 1 + j] = 1;
+	//					xv[12 * i + j] = 0;
+	//				}
+	//				else if (j == 7) {
+	//					xv[12 * 3 + j] = 1;
+	//					xv[12 * i + j] = 0;
+
+	//				}
+	//				else if (j == 9) {
+	//					xv[12 * 3 + j] = 1;
+	//					xv[12 * i + j] = 0;
+	//				}
+	//			}
+	//		}
+	//	}
+	//}
+	//else {
+	//	ev[3] = 1;
+	//	for (size_t i = 0; i < 5; i++)
+	//	{
+	//		for (size_t j = 0; j < 12; j++)
+	//		{
+	//			if (xv[12 * i + j] == 1) {
+
+	//				if (j == 1) {
+	//					xv[12 * 0 + j] = 1;
+	//					xv[12 * i + j] = 0;
+	//				}
+	//				else if (j == 1) {
+	//					xv[12 * 3 + j] = 1;
+	//					xv[12 * i + j] = 0;
+
+	//				}
+	//				else if (j == 6) {
+	//					xv[12 * 2 + j] = 1;
+	//					xv[12 * i + j] = 0;
+	//				}
+	//			}
+	//		}
+	//	}
+
+
+	//}
 
 	re_xv.push_back(xv);
 	re_cv.push_back(cv);
@@ -2242,7 +2197,7 @@ void PCLVisualizer::send() {
 		PCCPointSet3 frame;
 		fusion.insert(pair<int, PCCPointSet3>(i, frame));
 	}
-	
+
 	for (tiles_url_iter = tiles_url.begin(); tiles_url_iter != tiles_url.end(); tiles_url_iter++) {
 		QString url = QString::fromStdString(*tiles_url_iter);
 		QString reg = ".+(.bin)$";
@@ -2252,18 +2207,29 @@ void PCLVisualizer::send() {
 		int frame_ids = frame_id[i];
 		i++;
 		if (match) {
-			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "tile_" + QString::fromStdString(tile_ids)));		
+			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "tile_" + QString::fromStdString(tile_ids)));
+			manager.get(request);
 		}
-		else {
+	}
+	i = 0;
+	for (tiles_url_iter = tiles_url.begin(); tiles_url_iter != tiles_url.end(); tiles_url_iter++) {
+		QString url = QString::fromStdString(*tiles_url_iter);
+		QString reg = ".+(.bin)$";
+		QRegExp rx(reg);
+		bool match = rx.exactMatch(url);
+		string tile_ids = tile_id[i];
+		int frame_ids = frame_id[i];
+		i++;
+		if (!match) {
 			request.setUrl(QUrl(url + "?n=" + "gof_" + QString::fromStdString(to_string(current_gof)) + "tile_" + QString::fromStdString(tile_ids) + "frame_" + QString::fromStdString(to_string(frame_ids))));
+			manager.get(request);
 		}
-		manager.get(request);
 	}
 	current_gof++;
 }
 
 
-void PCLVisualizer::send2() {
+void DracoPlayer::send2() {
 
 	viewer->getCameras(camera);
 	fovs.push_back(camera);
@@ -2299,7 +2265,7 @@ void PCLVisualizer::send2() {
 
 
 //接收
-void PCLVisualizer::replyFinished(QNetworkReply *reply)
+void DracoPlayer::replyFinished(QNetworkReply *reply)
 {
 	if (reply->error() == QNetworkReply::NoError)
 	{
@@ -2320,13 +2286,13 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 			ofstream outfile("mainfest_tile.xml");
 			outfile << buf;
 			outfile.close();
-			return;		
+			return;
 		}
 		//分类匹配
 		reg = ".+(.bin)$";
 		QRegExp rx(reg);
 		match = rx.exactMatch(fileName);
-		
+
 		if (match) {
 			//如果是bin文件
 			QRegExp rx(QString("(\\d+)tile_(\\d+)"));
@@ -2334,30 +2300,30 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 			QString gof_id = rx.cap(1);
 			QString tile_id = rx.cap(2);
 			QString gof_tiled = gof_id + "_" + tile_id;
-			vector<uint8_t> temp(bytes.begin(),bytes.end());			
+			vector<uint8_t> temp(bytes.begin(), bytes.end());
 			bin_store.insert(pair<QString, vector<uint8_t>>(gof_tiled, temp));//写入解压区
-			QtConcurrent::run(&threadpool,this, &PCLVisualizer::decode_thread,is_tile);
+			QtConcurrent::run(&threadpool, this, &DracoPlayer::decode_thread, is_tile);
 		}
 
 		//如果是ply文件,无序,读取frame_id
 		else {
 			QRegExp rx(QString("(\\d+)tile_(\\d+)frame_(\\d+)"));
-			int pos = fileName.indexOf(rx);	
+			int pos = fileName.indexOf(rx);
 			int gof_id = rx.cap(1).toInt();
 			int tile_id = rx.cap(2).toInt();
 			int frame_id = rx.cap(3).toInt();
-			int offset=bytes.lastIndexOf('r');
-			string ply = bytes.mid(offset+3, bytes.size());
-			
+			int offset = bytes.lastIndexOf('r');
+			string ply = bytes.mid(offset + 3, bytes.size());
+			map<int, PCCPointSet3>::iterator iter;
 			//fusion_mutex.lock();
-			auto iter = fusion.find(frame_id);
+			iter = fusion.find(frame_id);
 			//fusion_mutex.unlock();
-			if (iter!=fusion.end()) {
-				QtConcurrent::run(&threadpool,this, &PCLVisualizer::frame2xyzrgb_add,ply, &(iter->second), gof_id, frame_id);
+			if (iter != fusion.end()) {
+				QtConcurrent::run(&threadpool, this, &DracoPlayer::frame2xyzrgb_add, ply, &(iter->second), gof_id, frame_id);
 			}
 			else {
 				//frame2xyzrgb(ply, gof_id,frame_id,is_tile);
-				QtConcurrent::run(&threadpool, this, &PCLVisualizer::frame2xyzrgb, ply, gof_id, frame_id,is_tile);
+				QtConcurrent::run(&threadpool, this, &DracoPlayer::frame2xyzrgb, ply, gof_id, frame_id, is_tile);
 			}
 		}
 		reply->deleteLater();
@@ -2370,7 +2336,7 @@ void PCLVisualizer::replyFinished(QNetworkReply *reply)
 
 
 //接受原始
-void PCLVisualizer::replyFinished2(QNetworkReply *reply)
+void DracoPlayer::replyFinished2(QNetworkReply *reply)
 {
 	if (reply->error() == QNetworkReply::NoError)
 	{
@@ -2407,7 +2373,7 @@ void PCLVisualizer::replyFinished2(QNetworkReply *reply)
 			QString gof_tiled = gof_id + "_1";
 			vector<uint8_t> temp(bytes.begin(), bytes.end());
 			bin_store.insert(pair<QString, vector<uint8_t>>(gof_tiled, temp));//写入解压区
-			QtConcurrent::run(&threadpool, this, &PCLVisualizer::decode_thread, is_tile);
+			QtConcurrent::run(&threadpool, this, &DracoPlayer::decode_thread, is_tile);
 		}
 		else {
 			//如果是ply文件,无序,读取frame_id	
@@ -2421,12 +2387,12 @@ void PCLVisualizer::replyFinished2(QNetworkReply *reply)
 			iter = fusion.find(frame_id);
 			//第一次新增
 			fusion_mutex.lock();
-			QtConcurrent::run(&threadpool, this, &PCLVisualizer::frame2xyzrgb, ply, gof_id, frame_id,is_tile);
+			QtConcurrent::run(&threadpool, this, &DracoPlayer::frame2xyzrgb, ply, gof_id, frame_id, is_tile);
 			//frame2xyzrgb(ply, gof_id, frame_id);
 			fusion_mutex.unlock();
 		}
-		
-		    reply->deleteLater();
+
+		reply->deleteLater();
 	}
 	else
 	{

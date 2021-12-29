@@ -1,16 +1,12 @@
-#pragma   once
-#ifndef PCLVISUALIZER_H
-#define PCLVISUALIZER_H
-#include <vtkAutoInit.h> 
-VTK_MODULE_INIT(vtkRenderingOpenGL2);
-VTK_MODULE_INIT(vtkInteractionStyle);
+#pragma once
+#include <QtWidgets/QMainWindow>
+#include "ui_DracoPlayer.h"
 #include <QtWidgets/QMainWindow>
 #include <pcl/io/pcd_io.h>
 #include<pcl/io/ply_io.h>
 #include <pcl/point_types.h>
 #include <pcl/visualization/pcl_visualizer.h>
 #include<pcl/visualization/cloud_viewer.h>
-#include "ui_PCLVisualizer.h"
 #include<pcl/io/io.h>
 #include<pcl/io/pcd_io.h>
 #include<pcl/io/vtk_io.h>
@@ -29,6 +25,15 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <thread>
 #include <QtConcurrent>
 #include <queue>
+#include <cinttypes>
+#include "draco/compression/decode.h"
+#include "draco/core/cycle_timer.h"
+#include "draco/io/file_utils.h"
+#include "draco/io/obj_encoder.h"
+#include "draco/io/parser_utils.h"
+#include "draco/io/ply_encoder.h"
+
+
 #include "PCCCommon.h"
 #include "PCCChrono.h"
 #include "PCCMemory.h"
@@ -39,11 +44,8 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include "PCCFrameContext.h"
 #include "PCCBitstream.h"
 #include "PCCGroupOfFrames.h"
-#include "PCCDecoderParameters.h"
-#include "PCCMetricsParameters.h"
-#include <cinttypes>
-#include <program_options_lite.h>
 #include <tbb/tbb.h>
+
 #include <QCloseEvent>
 #include <boost/lockfree/queue.hpp>
 #include <boost/thread/thread.hpp>
@@ -51,32 +53,31 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 extern int pcd_number;
 using namespace std;
 using namespace pcc;
-
-class PCLVisualizer : public QMainWindow
+class DracoPlayer : public QMainWindow
 {
 	Q_OBJECT
+
 public:
 
-	PCLVisualizer(QWidget *parent = 0);
-	~PCLVisualizer();
+	DracoPlayer(QWidget *parent = 0);
+	~DracoPlayer();
 	void initialVtkWidget();	//³õÊ¼»¯vtk²¿¼ş
 	void decode_thread(int is_tile);
 	void readbuffer_thread();
 	int writebuffer_thread(int is_tile);
-	Ui::PCLVisualizerClass* getui() { return &ui; }
+	Ui::DracoPlayerClass* getui() { return &ui; }
 	queue<map<int, PCCPointSet3>> buffer;
-
+	std::unique_ptr<draco::PointCloud> pc;
 private:
-	
 	//pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud;
 	QNetworkRequest request;//ÇëÇóÍ·
 	QNetworkAccessManager manager;//tile
 	QNetworkAccessManager manager2;
-	Ui::PCLVisualizerClass ui;
+	Ui::DracoPlayerClass ui;
 	QThreadPool threadpool;
 	boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
 
-	//boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("NarWhal"));
+	//boost::shared_ptr<pcl::visualization::DracoPlayer> viewer(new pcl::visualization::DracoPlayer("NarWhal"));
 
 	string tile_compressed;
 	string tile_uncompressed;
@@ -86,7 +87,7 @@ signals://·µ»ØÖµÊÇvoid,Ö»ĞèÒªÉùÃ÷,²»ĞèÒªÊµÏÖ£¬ÒòÎªÖ»ÊÇ¸öĞÅºÅ£¬²»¾ßÓĞ¶¯×÷ÒâÒå
 	void sigrender();
 	void siggsend();
 	void siggsend2();
-	void sig_ply2fusion(string ply, PCCPointSet3 frame, int gof_id,int frame_id);
+	void sig_ply2fusion(string ply, PCCPointSet3 frame, int gof_id, int frame_id);
 	void sig_ply2fusion_add(string ply, PCCPointSet3 &frame, int gof_id, int frame_id);
 
 public slots://¸ß°æ±¾qt,²Ûº¯Êı¿ÉÒÔĞ´µ½public»òÕßÈ«¾Öº¯Êı,ĞèÒªÉùÃ÷ºÍÊµÏÖ£¬ÒòÎªĞèÒª¾ßÌå·´Ó¦¶¯×÷
@@ -98,7 +99,7 @@ public slots://¸ß°æ±¾qt,²Ûº¯Êı¿ÉÒÔĞ´µ½public»òÕßÈ«¾Öº¯Êı,ĞèÒªÉùÃ÷ºÍÊµÏÖ£¬ÒòÎªĞèÒ
 	// ÏìÓ¦½áÊø£¬½øĞĞ½á¹û´¦Àí
 	void replyFinished(QNetworkReply *reply);
 	void replyFinished2(QNetworkReply *reply);
-	int frame2xyzrgb(string ply, int gof_id,int frame_id,int is_tile);
+	int frame2xyzrgb(string ply, int gof_id, int frame_id, int is_tile);
 	int frame2xyzrgb_add(string ply, PCCPointSet3 *frame, int gof_id, int frame_id);
 	int frame2xyzrgb2(string ply, int gof_id, int frame_id);
 
@@ -106,4 +107,4 @@ public slots://¸ß°æ±¾qt,²Ûº¯Êı¿ÉÒÔĞ´µ½public»òÕßÈ«¾Öº¯Êı,ĞèÒªÉùÃ÷ºÍÊµÏÖ£¬ÒòÎªĞèÒ
 
 
 
-#endif PCLVISUALIZER_H
+

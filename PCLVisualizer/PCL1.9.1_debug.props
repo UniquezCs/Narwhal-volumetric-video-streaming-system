@@ -3,7 +3,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Program Files\PCL 1.9.1\3rdParty\OpenNI2\Include;C:\Program Files\PCL 1.9.1\include\pcl-1.9;D:\VTK80\VTK\include\vtk-8.0;C:\Program Files\PCL 1.9.1\3rdParty\QHull\include;C:\Program Files\PCL 1.9.1\3rdParty\FLANN\include;C:\Program Files\PCL 1.9.1\3rdParty\Eigen\eigen3;C:\Program Files\PCL 1.9.1\3rdParty\Boost\include\boost-1_68;$(IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Program Files\PCL 1.9.1\3rdParty\OpenNI2\Include;C:\Program Files\PCL 1.9.1\include\pcl-1.9;C:\Program Files\PCL 1.9.1\3rdParty\QHull\include;C:\Program Files\PCL 1.9.1\3rdParty\FLANN\include;C:\Program Files\PCL 1.9.1\3rdParty\Eigen\eigen3;C:\Program Files\PCL 1.9.1\3rdParty\Boost\include\boost-1_68;C:\Program Files\PCL 1.9.1\3rdParty\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;C:\Program Files\PCL 1.9.1\3rdParty\OpenNI2\Lib;C:\Program Files\PCL 1.9.1\3rdParty\VTK\lib;C:\Program Files\PCL 1.9.1\3rdParty\Qhull\lib;C:\Program Files\PCL 1.9.1\3rdParty\FLANN\lib;C:\Program Files\PCL 1.9.1\3rdParty\Boost\lib;C:\Program Files\PCL 1.9.1\lib;$(LibraryPath)</LibraryPath>
     <_PropertySheetDisplayName>PCL1.9.1_debug</_PropertySheetDisplayName>
   </PropertyGroup>

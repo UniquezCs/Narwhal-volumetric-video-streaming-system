@@ -29,8 +29,10 @@ public:
     QWidget *centralWidget;
     QGridLayout *gridLayout;
     QLineEdit *mainfest_url;
-    QPushButton *button_play;
     QVTKWidget *qvtkWidget;
+    QPushButton *button_play_notile;
+    QPushButton *button_play_Tile;
+    QLineEdit *scheme;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -39,7 +41,7 @@ public:
     {
         if (PCLVisualizerClass->objectName().isEmpty())
             PCLVisualizerClass->setObjectName(QString::fromUtf8("PCLVisualizerClass"));
-        PCLVisualizerClass->resize(951, 647);
+        PCLVisualizerClass->resize(1014, 663);
         centralWidget = new QWidget(PCLVisualizerClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -50,22 +52,34 @@ public:
         mainfest_url->setObjectName(QString::fromUtf8("mainfest_url"));
         mainfest_url->setMinimumSize(QSize(933, 20));
 
-        gridLayout->addWidget(mainfest_url, 0, 0, 1, 2);
-
-        button_play = new QPushButton(centralWidget);
-        button_play->setObjectName(QString::fromUtf8("button_play"));
-
-        gridLayout->addWidget(button_play, 2, 0, 1, 2);
+        gridLayout->addWidget(mainfest_url, 0, 0, 1, 3);
 
         qvtkWidget = new QVTKWidget(centralWidget);
         qvtkWidget->setObjectName(QString::fromUtf8("qvtkWidget"));
 
-        gridLayout->addWidget(qvtkWidget, 1, 0, 1, 2);
+        gridLayout->addWidget(qvtkWidget, 1, 0, 1, 3);
+
+        button_play_notile = new QPushButton(centralWidget);
+        button_play_notile->setObjectName(QString::fromUtf8("button_play_notile"));
+        button_play_notile->setFlat(false);
+
+        gridLayout->addWidget(button_play_notile, 2, 0, 1, 1);
+
+        button_play_Tile = new QPushButton(centralWidget);
+        button_play_Tile->setObjectName(QString::fromUtf8("button_play_Tile"));
+        button_play_Tile->setFlat(false);
+
+        gridLayout->addWidget(button_play_Tile, 2, 1, 1, 1);
+
+        scheme = new QLineEdit(centralWidget);
+        scheme->setObjectName(QString::fromUtf8("scheme"));
+
+        gridLayout->addWidget(scheme, 2, 2, 1, 1);
 
         PCLVisualizerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PCLVisualizerClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 951, 23));
+        menuBar->setGeometry(QRect(0, 0, 1014, 23));
         PCLVisualizerClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(PCLVisualizerClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -82,7 +96,10 @@ public:
     void retranslateUi(QMainWindow *PCLVisualizerClass)
     {
         PCLVisualizerClass->setWindowTitle(QApplication::translate("PCLVisualizerClass", "PCLVisualizer", nullptr));
-        button_play->setText(QApplication::translate("PCLVisualizerClass", "play", nullptr));
+        mainfest_url->setInputMask(QString());
+        mainfest_url->setText(QApplication::translate("PCLVisualizerClass", "http://localhost/longdress/mainfest.xml", nullptr));
+        button_play_notile->setText(QApplication::translate("PCLVisualizerClass", "NoTile", nullptr));
+        button_play_Tile->setText(QApplication::translate("PCLVisualizerClass", "Tile", nullptr));
     } // retranslateUi
 
 };

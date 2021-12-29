@@ -1073,9 +1073,7 @@ bool TiXmlDocument::LoadFile( FILE* file, TiXmlEncoding encoding )
 	}
 	assert( q <= (buf+length) );
 	*q = 0;
-
 	Parse( buf, 0, encoding );
-
 	delete [] buf;
 	return !Error();
 }

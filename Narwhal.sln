@@ -4,26 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCLVisualizer", "PCLVisualizer\PCLVisualizer.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
-	ProjectSection(ProjectDependencies) = postProject
-		{84CB8609-9489-3325-BE47-90906BB8B623} = {84CB8609-9489-3325-BE47-90906BB8B623}
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288} = {D98B6C4D-DD56-38EA-ADA0-482738D89288}
-		{3323BC58-6D65-3601-A373-7D4D80732B8D} = {3323BC58-6D65-3601-A373-7D4D80732B8D}
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D} = {79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532} = {9F98078F-7F60-3DE2-8A6A-B336CB338532}
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1} = {DD6E42B0-2496-3373-A33C-F89159B59FA1}
-	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PccLibCommon", "D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibCommon\PccLibCommon.vcxproj", "{3323BC58-6D65-3601-A373-7D4D80732B8D}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PccLibDecoder", "D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibDecoder\PccLibDecoder.vcxproj", "{9F98078F-7F60-3DE2-8A6A-B336CB338532}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PccLibHevcParser", "D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\dependencies\PccLibHevcParser\PccLibHevcParser.vcxproj", "{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PccLibMetrics", "D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibMetrics\PccLibMetrics.vcxproj", "{D98B6C4D-DD56-38EA-ADA0-482738D89288}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tbb_static", "D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\dependencies\tbb\tbb_static.vcxproj", "{84CB8609-9489-3325-BE47-90906BB8B623}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\ZERO_CHECK.vcxproj", "{DD6E42B0-2496-3373-A33C-F89159B59FA1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DracoPlayer", "DracoPlayer\DracoPlayer.vcxproj", "{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,54 +23,14 @@ Global
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.RelWithDebInfo|x64.ActiveCfg = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.RelWithDebInfo|x64.Build.0 = Release|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.Debug|x64.ActiveCfg = Debug|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.Debug|x64.Build.0 = Debug|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.Release|x64.ActiveCfg = Release|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.Release|x64.Build.0 = Release|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{3323BC58-6D65-3601-A373-7D4D80732B8D}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.Debug|x64.ActiveCfg = Debug|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.Debug|x64.Build.0 = Debug|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.Release|x64.ActiveCfg = Release|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.Release|x64.Build.0 = Release|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{9F98078F-7F60-3DE2-8A6A-B336CB338532}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.Debug|x64.ActiveCfg = Debug|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.Debug|x64.Build.0 = Debug|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.Release|x64.ActiveCfg = Release|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.Release|x64.Build.0 = Release|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{79BBC762-D9C2-3BE6-A4BD-8EEE88B81F7D}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.Debug|x64.ActiveCfg = Debug|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.Debug|x64.Build.0 = Debug|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.Release|x64.ActiveCfg = Release|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.Release|x64.Build.0 = Release|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{D98B6C4D-DD56-38EA-ADA0-482738D89288}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.Debug|x64.ActiveCfg = Debug|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.Debug|x64.Build.0 = Debug|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.Release|x64.ActiveCfg = Release|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.Release|x64.Build.0 = Release|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{84CB8609-9489-3325-BE47-90906BB8B623}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.Debug|x64.ActiveCfg = Debug|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.Debug|x64.Build.0 = Debug|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.Release|x64.ActiveCfg = Release|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.Release|x64.Build.0 = Release|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{DD6E42B0-2496-3373-A33C-F89159B59FA1}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.Debug|x64.ActiveCfg = Debug|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.Debug|x64.Build.0 = Debug|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.MinSizeRel|x64.Build.0 = Release|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.Release|x64.ActiveCfg = Release|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.Release|x64.Build.0 = Release|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{A3F36FC1-D29D-4832-BB57-6C7F88749AC6}.RelWithDebInfo|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

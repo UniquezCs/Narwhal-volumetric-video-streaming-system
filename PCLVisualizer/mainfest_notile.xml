@@ -1,0 +1,4324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<info frames="300" GOF="30" flag="3" BaseURL="http://192.168.1.102/longdress/"/>
+
+
+
+<GOF id="1" minx="103" miny="9" minz="22" maxx="459" maxy="1012" maxz="318">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="765821">GOF1/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="765821">GOF1/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="765821">GOF1/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="765821">GOF1/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="765821">GOF1/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="765821">GOF1/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="765821">GOF1/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="765821">GOF1/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="765821">GOF1/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="765821">GOF1/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="765821">GOF1/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="765821">GOF1/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="765821">GOF1/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="765821">GOF1/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="765821">GOF1/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="765821">GOF1/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="765821">GOF1/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="765821">GOF1/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="765821">GOF1/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="765821">GOF1/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="765821">GOF1/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="765821">GOF1/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="765821">GOF1/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="765821">GOF1/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="765821">GOF1/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="765821">GOF1/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="765821">GOF1/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="765821">GOF1/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="765821">GOF1/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="765821">GOF1/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="765821">GOF1/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="765821">GOF1/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="765821">GOF1/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="765821">GOF1/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="765821">GOF1/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="765821">GOF1/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="765821">GOF1/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="765821">GOF1/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="765821">GOF1/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="765821">GOF1/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="765821">GOF1/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="765821">GOF1/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="765821">GOF1/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="765821">GOF1/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="765821">GOF1/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="765821">GOF1/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="765821">GOF1/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="765821">GOF1/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="765821">GOF1/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="765821">GOF1/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF1/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF1/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF1/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF1/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF1/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="2" minx="124" miny="10" minz="40" maxx="472" maxy="1007" maxz="433">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="801121">GOF2/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="801121">GOF2/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="801121">GOF2/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="801121">GOF2/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="801121">GOF2/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="801121">GOF2/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="801121">GOF2/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="801121">GOF2/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="801121">GOF2/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="801121">GOF2/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="801121">GOF2/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="801121">GOF2/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="801121">GOF2/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="801121">GOF2/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="801121">GOF2/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="801121">GOF2/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="801121">GOF2/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="801121">GOF2/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="801121">GOF2/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="801121">GOF2/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="801121">GOF2/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="801121">GOF2/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="801121">GOF2/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="801121">GOF2/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="801121">GOF2/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="801121">GOF2/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="801121">GOF2/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="801121">GOF2/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="801121">GOF2/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="801121">GOF2/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="801121">GOF2/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="801121">GOF2/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="801121">GOF2/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="801121">GOF2/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="801121">GOF2/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="801121">GOF2/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="801121">GOF2/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="801121">GOF2/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="801121">GOF2/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="801121">GOF2/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="801121">GOF2/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="801121">GOF2/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="801121">GOF2/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="801121">GOF2/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="801121">GOF2/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="801121">GOF2/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="801121">GOF2/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="801121">GOF2/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="801121">GOF2/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="801121">GOF2/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF2/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF2/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF2/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF2/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF2/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="3" minx="132" miny="11" minz="101" maxx="477" maxy="1004" maxz="436">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="799070">GOF3/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="799070">GOF3/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="799070">GOF3/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="799070">GOF3/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="799070">GOF3/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="799070">GOF3/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="799070">GOF3/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="799070">GOF3/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="799070">GOF3/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="799070">GOF3/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="799070">GOF3/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="799070">GOF3/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="799070">GOF3/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="799070">GOF3/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="799070">GOF3/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="799070">GOF3/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="799070">GOF3/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="799070">GOF3/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="799070">GOF3/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="799070">GOF3/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="799070">GOF3/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="799070">GOF3/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="799070">GOF3/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="799070">GOF3/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="799070">GOF3/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="799070">GOF3/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="799070">GOF3/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="799070">GOF3/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="799070">GOF3/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="799070">GOF3/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="799070">GOF3/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="799070">GOF3/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="799070">GOF3/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="799070">GOF3/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="799070">GOF3/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="799070">GOF3/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="799070">GOF3/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="799070">GOF3/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="799070">GOF3/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="799070">GOF3/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="799070">GOF3/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="799070">GOF3/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="799070">GOF3/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="799070">GOF3/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="799070">GOF3/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="799070">GOF3/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="799070">GOF3/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="799070">GOF3/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="799070">GOF3/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="799070">GOF3/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF3/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF3/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF3/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF3/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF3/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="4" minx="135" miny="6" minz="173" maxx="460" maxy="992" maxz="496">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="808223">GOF4/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="808223">GOF4/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="808223">GOF4/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="808223">GOF4/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="808223">GOF4/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="808223">GOF4/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="808223">GOF4/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="808223">GOF4/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="808223">GOF4/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="808223">GOF4/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="808223">GOF4/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="808223">GOF4/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="808223">GOF4/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="808223">GOF4/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="808223">GOF4/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="808223">GOF4/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="808223">GOF4/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="808223">GOF4/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="808223">GOF4/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="808223">GOF4/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="808223">GOF4/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="808223">GOF4/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="808223">GOF4/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="808223">GOF4/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="808223">GOF4/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="808223">GOF4/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="808223">GOF4/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="808223">GOF4/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="808223">GOF4/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="808223">GOF4/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="808223">GOF4/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="808223">GOF4/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="808223">GOF4/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="808223">GOF4/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="808223">GOF4/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="808223">GOF4/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="808223">GOF4/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="808223">GOF4/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="808223">GOF4/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="808223">GOF4/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="808223">GOF4/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="808223">GOF4/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="808223">GOF4/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="808223">GOF4/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="808223">GOF4/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="808223">GOF4/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="808223">GOF4/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="808223">GOF4/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="808223">GOF4/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="808223">GOF4/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF4/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF4/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF4/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF4/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF4/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="5" minx="136" miny="6" minz="203" maxx="378" maxy="1005" maxz="636">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="836461">GOF5/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="836461">GOF5/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="836461">GOF5/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="836461">GOF5/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="836461">GOF5/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="836461">GOF5/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="836461">GOF5/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="836461">GOF5/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="836461">GOF5/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="836461">GOF5/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="836461">GOF5/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="836461">GOF5/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="836461">GOF5/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="836461">GOF5/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="836461">GOF5/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="836461">GOF5/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="836461">GOF5/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="836461">GOF5/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="836461">GOF5/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="836461">GOF5/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="836461">GOF5/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="836461">GOF5/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="836461">GOF5/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="836461">GOF5/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="836461">GOF5/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="836461">GOF5/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="836461">GOF5/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="836461">GOF5/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="836461">GOF5/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="836461">GOF5/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="836461">GOF5/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="836461">GOF5/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="836461">GOF5/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="836461">GOF5/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="836461">GOF5/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="836461">GOF5/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="836461">GOF5/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="836461">GOF5/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="836461">GOF5/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="836461">GOF5/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="836461">GOF5/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="836461">GOF5/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="836461">GOF5/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="836461">GOF5/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="836461">GOF5/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="836461">GOF5/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="836461">GOF5/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="836461">GOF5/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="836461">GOF5/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="836461">GOF5/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF5/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF5/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF5/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF5/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF5/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="6" minx="150" miny="7" minz="230" maxx="363" maxy="1013" maxz="658">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="838029">GOF6/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838029">GOF6/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838029">GOF6/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838029">GOF6/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838029">GOF6/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838029">GOF6/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838029">GOF6/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838029">GOF6/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838029">GOF6/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838029">GOF6/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="838029">GOF6/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838029">GOF6/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838029">GOF6/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838029">GOF6/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838029">GOF6/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838029">GOF6/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838029">GOF6/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838029">GOF6/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838029">GOF6/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838029">GOF6/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="838029">GOF6/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838029">GOF6/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838029">GOF6/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838029">GOF6/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838029">GOF6/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838029">GOF6/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838029">GOF6/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838029">GOF6/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838029">GOF6/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838029">GOF6/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="838029">GOF6/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838029">GOF6/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838029">GOF6/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838029">GOF6/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838029">GOF6/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838029">GOF6/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838029">GOF6/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838029">GOF6/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838029">GOF6/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838029">GOF6/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="838029">GOF6/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838029">GOF6/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838029">GOF6/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838029">GOF6/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838029">GOF6/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838029">GOF6/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838029">GOF6/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838029">GOF6/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838029">GOF6/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838029">GOF6/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF6/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF6/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF6/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF6/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF6/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="7" minx="149" miny="9" minz="239" maxx="363" maxy="1004" maxz="650">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="862257">GOF7/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="862257">GOF7/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="862257">GOF7/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="862257">GOF7/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="862257">GOF7/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="862257">GOF7/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="862257">GOF7/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="862257">GOF7/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="862257">GOF7/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="862257">GOF7/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="862257">GOF7/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="862257">GOF7/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="862257">GOF7/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="862257">GOF7/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="862257">GOF7/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="862257">GOF7/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="862257">GOF7/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="862257">GOF7/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="862257">GOF7/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="862257">GOF7/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="862257">GOF7/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="862257">GOF7/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="862257">GOF7/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="862257">GOF7/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="862257">GOF7/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="862257">GOF7/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="862257">GOF7/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="862257">GOF7/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="862257">GOF7/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="862257">GOF7/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="862257">GOF7/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="862257">GOF7/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="862257">GOF7/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="862257">GOF7/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="862257">GOF7/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="862257">GOF7/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="862257">GOF7/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="862257">GOF7/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="862257">GOF7/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="862257">GOF7/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="862257">GOF7/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="862257">GOF7/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="862257">GOF7/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="862257">GOF7/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="862257">GOF7/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="862257">GOF7/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="862257">GOF7/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="862257">GOF7/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="862257">GOF7/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="862257">GOF7/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF7/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF7/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF7/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF7/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF7/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="8" minx="105" miny="8" minz="243" maxx="376" maxy="997" maxz="610">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="806629">GOF8/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="806629">GOF8/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="806629">GOF8/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="806629">GOF8/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="806629">GOF8/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="806629">GOF8/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="806629">GOF8/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="806629">GOF8/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="806629">GOF8/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="806629">GOF8/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="806629">GOF8/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="806629">GOF8/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="806629">GOF8/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="806629">GOF8/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="806629">GOF8/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="806629">GOF8/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="806629">GOF8/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="806629">GOF8/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="806629">GOF8/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="806629">GOF8/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="806629">GOF8/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="806629">GOF8/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="806629">GOF8/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="806629">GOF8/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="806629">GOF8/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="806629">GOF8/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="806629">GOF8/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="806629">GOF8/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="806629">GOF8/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="806629">GOF8/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="806629">GOF8/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="806629">GOF8/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="806629">GOF8/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="806629">GOF8/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="806629">GOF8/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="806629">GOF8/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="806629">GOF8/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="806629">GOF8/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="806629">GOF8/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="806629">GOF8/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="806629">GOF8/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="806629">GOF8/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="806629">GOF8/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="806629">GOF8/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="806629">GOF8/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="806629">GOF8/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="806629">GOF8/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="806629">GOF8/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="806629">GOF8/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="806629">GOF8/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF8/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF8/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF8/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF8/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF8/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="9" minx="33" miny="9" minz="298" maxx="452" maxy="1017" maxz="579">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="845531">GOF9/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845531">GOF9/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845531">GOF9/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845531">GOF9/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845531">GOF9/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845531">GOF9/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845531">GOF9/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845531">GOF9/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845531">GOF9/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845531">GOF9/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="845531">GOF9/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845531">GOF9/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845531">GOF9/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845531">GOF9/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845531">GOF9/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845531">GOF9/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845531">GOF9/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845531">GOF9/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845531">GOF9/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845531">GOF9/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="845531">GOF9/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845531">GOF9/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845531">GOF9/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845531">GOF9/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845531">GOF9/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845531">GOF9/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845531">GOF9/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845531">GOF9/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845531">GOF9/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845531">GOF9/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="845531">GOF9/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845531">GOF9/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845531">GOF9/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845531">GOF9/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845531">GOF9/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845531">GOF9/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845531">GOF9/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845531">GOF9/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845531">GOF9/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845531">GOF9/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="845531">GOF9/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845531">GOF9/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845531">GOF9/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845531">GOF9/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845531">GOF9/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845531">GOF9/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845531">GOF9/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845531">GOF9/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845531">GOF9/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845531">GOF9/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF9/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF9/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF9/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF9/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF9/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="10" minx="23" miny="7" minz="249" maxx="462" maxy="1015" maxz="551">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="914790">GOF10/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="914790">GOF10/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="914790">GOF10/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="914790">GOF10/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="914790">GOF10/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="914790">GOF10/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="914790">GOF10/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="914790">GOF10/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="914790">GOF10/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="914790">GOF10/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="914790">GOF10/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="914790">GOF10/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="914790">GOF10/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="914790">GOF10/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="914790">GOF10/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="914790">GOF10/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="914790">GOF10/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="914790">GOF10/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="914790">GOF10/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="914790">GOF10/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="914790">GOF10/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="914790">GOF10/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="914790">GOF10/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="914790">GOF10/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="914790">GOF10/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="914790">GOF10/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="914790">GOF10/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="914790">GOF10/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="914790">GOF10/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="914790">GOF10/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="914790">GOF10/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="914790">GOF10/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="914790">GOF10/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="914790">GOF10/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="914790">GOF10/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="914790">GOF10/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="914790">GOF10/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="914790">GOF10/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="914790">GOF10/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="914790">GOF10/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="914790">GOF10/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="914790">GOF10/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="914790">GOF10/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="914790">GOF10/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="914790">GOF10/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="914790">GOF10/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="914790">GOF10/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="914790">GOF10/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="914790">GOF10/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="914790">GOF10/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF10/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF10/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF10/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF10/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF10/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="11" minx="71" miny="7" minz="199" maxx="380" maxy="1005" maxz="533">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="863428">GOF11/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="863428">GOF11/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="863428">GOF11/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="863428">GOF11/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="863428">GOF11/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="863428">GOF11/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="863428">GOF11/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="863428">GOF11/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="863428">GOF11/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="863428">GOF11/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="863428">GOF11/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="863428">GOF11/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="863428">GOF11/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="863428">GOF11/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="863428">GOF11/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="863428">GOF11/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="863428">GOF11/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="863428">GOF11/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="863428">GOF11/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="863428">GOF11/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="863428">GOF11/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="863428">GOF11/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="863428">GOF11/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="863428">GOF11/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="863428">GOF11/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="863428">GOF11/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="863428">GOF11/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="863428">GOF11/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="863428">GOF11/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="863428">GOF11/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="863428">GOF11/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="863428">GOF11/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="863428">GOF11/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="863428">GOF11/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="863428">GOF11/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="863428">GOF11/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="863428">GOF11/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="863428">GOF11/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="863428">GOF11/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="863428">GOF11/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="863428">GOF11/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="863428">GOF11/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="863428">GOF11/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="863428">GOF11/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="863428">GOF11/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="863428">GOF11/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="863428">GOF11/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="863428">GOF11/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="863428">GOF11/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="863428">GOF11/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF11/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF11/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF11/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF11/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF11/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="12" minx="122" miny="10" minz="121" maxx="412" maxy="994" maxz="542">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="822314">GOF12/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="822314">GOF12/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="822314">GOF12/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="822314">GOF12/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="822314">GOF12/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="822314">GOF12/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="822314">GOF12/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="822314">GOF12/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="822314">GOF12/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="822314">GOF12/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="822314">GOF12/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="822314">GOF12/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="822314">GOF12/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="822314">GOF12/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="822314">GOF12/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="822314">GOF12/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="822314">GOF12/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="822314">GOF12/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="822314">GOF12/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="822314">GOF12/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="822314">GOF12/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="822314">GOF12/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="822314">GOF12/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="822314">GOF12/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="822314">GOF12/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="822314">GOF12/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="822314">GOF12/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="822314">GOF12/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="822314">GOF12/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="822314">GOF12/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="822314">GOF12/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="822314">GOF12/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="822314">GOF12/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="822314">GOF12/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="822314">GOF12/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="822314">GOF12/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="822314">GOF12/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="822314">GOF12/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="822314">GOF12/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="822314">GOF12/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="822314">GOF12/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="822314">GOF12/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="822314">GOF12/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="822314">GOF12/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="822314">GOF12/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="822314">GOF12/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="822314">GOF12/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="822314">GOF12/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="822314">GOF12/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="822314">GOF12/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF12/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF12/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF12/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF12/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF12/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="13" minx="152" miny="9" minz="101" maxx="348" maxy="1021" maxz="517">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="794338">GOF13/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="794338">GOF13/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="794338">GOF13/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="794338">GOF13/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="794338">GOF13/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="794338">GOF13/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="794338">GOF13/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="794338">GOF13/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="794338">GOF13/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="794338">GOF13/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="794338">GOF13/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="794338">GOF13/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="794338">GOF13/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="794338">GOF13/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="794338">GOF13/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="794338">GOF13/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="794338">GOF13/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="794338">GOF13/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="794338">GOF13/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="794338">GOF13/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="794338">GOF13/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="794338">GOF13/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="794338">GOF13/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="794338">GOF13/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="794338">GOF13/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="794338">GOF13/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="794338">GOF13/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="794338">GOF13/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="794338">GOF13/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="794338">GOF13/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="794338">GOF13/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="794338">GOF13/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="794338">GOF13/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="794338">GOF13/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="794338">GOF13/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="794338">GOF13/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="794338">GOF13/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="794338">GOF13/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="794338">GOF13/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="794338">GOF13/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="794338">GOF13/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="794338">GOF13/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="794338">GOF13/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="794338">GOF13/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="794338">GOF13/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="794338">GOF13/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="794338">GOF13/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="794338">GOF13/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="794338">GOF13/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="794338">GOF13/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF13/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF13/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF13/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF13/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF13/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="14" minx="127" miny="7" minz="89" maxx="385" maxy="1018" maxz="468">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="878900">GOF14/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="878900">GOF14/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="878900">GOF14/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="878900">GOF14/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="878900">GOF14/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="878900">GOF14/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="878900">GOF14/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="878900">GOF14/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="878900">GOF14/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="878900">GOF14/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="878900">GOF14/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="878900">GOF14/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="878900">GOF14/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="878900">GOF14/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="878900">GOF14/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="878900">GOF14/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="878900">GOF14/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="878900">GOF14/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="878900">GOF14/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="878900">GOF14/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="878900">GOF14/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="878900">GOF14/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="878900">GOF14/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="878900">GOF14/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="878900">GOF14/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="878900">GOF14/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="878900">GOF14/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="878900">GOF14/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="878900">GOF14/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="878900">GOF14/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="878900">GOF14/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="878900">GOF14/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="878900">GOF14/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="878900">GOF14/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="878900">GOF14/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="878900">GOF14/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="878900">GOF14/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="878900">GOF14/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="878900">GOF14/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="878900">GOF14/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="878900">GOF14/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="878900">GOF14/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="878900">GOF14/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="878900">GOF14/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="878900">GOF14/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="878900">GOF14/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="878900">GOF14/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="878900">GOF14/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="878900">GOF14/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="878900">GOF14/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF14/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF14/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF14/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF14/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF14/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="15" minx="99" miny="8" minz="91" maxx="462" maxy="1001" maxz="434">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="838488">GOF15/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838488">GOF15/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838488">GOF15/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838488">GOF15/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838488">GOF15/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838488">GOF15/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838488">GOF15/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838488">GOF15/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838488">GOF15/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838488">GOF15/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="838488">GOF15/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838488">GOF15/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838488">GOF15/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838488">GOF15/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838488">GOF15/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838488">GOF15/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838488">GOF15/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838488">GOF15/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838488">GOF15/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838488">GOF15/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="838488">GOF15/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838488">GOF15/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838488">GOF15/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838488">GOF15/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838488">GOF15/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838488">GOF15/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838488">GOF15/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838488">GOF15/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838488">GOF15/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838488">GOF15/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="838488">GOF15/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838488">GOF15/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838488">GOF15/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838488">GOF15/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838488">GOF15/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838488">GOF15/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838488">GOF15/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838488">GOF15/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838488">GOF15/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838488">GOF15/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="838488">GOF15/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="838488">GOF15/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="838488">GOF15/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="838488">GOF15/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="838488">GOF15/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="838488">GOF15/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="838488">GOF15/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="838488">GOF15/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="838488">GOF15/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="838488">GOF15/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF15/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF15/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF15/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF15/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF15/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="16" minx="108" miny="3" minz="78" maxx="437" maxy="992" maxz="569">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="805746">GOF16/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="805746">GOF16/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="805746">GOF16/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="805746">GOF16/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="805746">GOF16/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="805746">GOF16/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="805746">GOF16/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="805746">GOF16/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="805746">GOF16/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="805746">GOF16/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="805746">GOF16/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="805746">GOF16/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="805746">GOF16/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="805746">GOF16/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="805746">GOF16/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="805746">GOF16/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="805746">GOF16/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="805746">GOF16/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="805746">GOF16/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="805746">GOF16/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="805746">GOF16/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="805746">GOF16/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="805746">GOF16/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="805746">GOF16/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="805746">GOF16/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="805746">GOF16/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="805746">GOF16/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="805746">GOF16/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="805746">GOF16/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="805746">GOF16/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="805746">GOF16/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="805746">GOF16/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="805746">GOF16/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="805746">GOF16/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="805746">GOF16/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="805746">GOF16/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="805746">GOF16/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="805746">GOF16/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="805746">GOF16/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="805746">GOF16/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="805746">GOF16/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="805746">GOF16/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="805746">GOF16/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="805746">GOF16/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="805746">GOF16/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="805746">GOF16/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="805746">GOF16/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="805746">GOF16/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="805746">GOF16/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="805746">GOF16/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF16/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF16/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF16/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF16/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF16/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="17" minx="144" miny="9" minz="44" maxx="414" maxy="1011" maxz="444">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="819325">GOF17/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="819325">GOF17/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="819325">GOF17/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="819325">GOF17/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="819325">GOF17/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="819325">GOF17/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="819325">GOF17/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="819325">GOF17/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="819325">GOF17/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="819325">GOF17/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="819325">GOF17/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="819325">GOF17/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="819325">GOF17/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="819325">GOF17/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="819325">GOF17/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="819325">GOF17/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="819325">GOF17/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="819325">GOF17/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="819325">GOF17/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="819325">GOF17/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="819325">GOF17/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="819325">GOF17/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="819325">GOF17/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="819325">GOF17/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="819325">GOF17/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="819325">GOF17/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="819325">GOF17/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="819325">GOF17/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="819325">GOF17/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="819325">GOF17/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="819325">GOF17/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="819325">GOF17/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="819325">GOF17/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="819325">GOF17/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="819325">GOF17/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="819325">GOF17/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="819325">GOF17/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="819325">GOF17/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="819325">GOF17/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="819325">GOF17/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="819325">GOF17/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="819325">GOF17/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="819325">GOF17/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="819325">GOF17/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="819325">GOF17/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="819325">GOF17/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="819325">GOF17/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="819325">GOF17/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="819325">GOF17/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="819325">GOF17/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF17/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF17/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF17/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF17/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF17/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="18" minx="56" miny="5" minz="145" maxx="475" maxy="1019" maxz="449">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="861881">GOF18/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="861881">GOF18/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="861881">GOF18/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="861881">GOF18/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="861881">GOF18/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="861881">GOF18/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="861881">GOF18/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="861881">GOF18/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="861881">GOF18/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="861881">GOF18/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="861881">GOF18/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="861881">GOF18/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="861881">GOF18/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="861881">GOF18/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="861881">GOF18/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="861881">GOF18/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="861881">GOF18/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="861881">GOF18/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="861881">GOF18/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="861881">GOF18/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="861881">GOF18/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="861881">GOF18/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="861881">GOF18/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="861881">GOF18/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="861881">GOF18/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="861881">GOF18/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="861881">GOF18/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="861881">GOF18/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="861881">GOF18/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="861881">GOF18/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="861881">GOF18/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="861881">GOF18/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="861881">GOF18/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="861881">GOF18/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="861881">GOF18/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="861881">GOF18/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="861881">GOF18/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="861881">GOF18/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="861881">GOF18/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="861881">GOF18/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="861881">GOF18/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="861881">GOF18/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="861881">GOF18/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="861881">GOF18/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="861881">GOF18/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="861881">GOF18/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="861881">GOF18/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="861881">GOF18/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="861881">GOF18/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="861881">GOF18/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF18/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF18/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF18/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF18/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF18/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="19" minx="114" miny="8" minz="81" maxx="406" maxy="1016" maxz="475">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="875969">GOF19/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="875969">GOF19/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="875969">GOF19/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="875969">GOF19/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="875969">GOF19/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="875969">GOF19/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="875969">GOF19/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="875969">GOF19/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="875969">GOF19/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="875969">GOF19/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="875969">GOF19/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="875969">GOF19/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="875969">GOF19/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="875969">GOF19/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="875969">GOF19/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="875969">GOF19/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="875969">GOF19/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="875969">GOF19/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="875969">GOF19/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="875969">GOF19/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="875969">GOF19/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="875969">GOF19/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="875969">GOF19/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="875969">GOF19/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="875969">GOF19/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="875969">GOF19/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="875969">GOF19/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="875969">GOF19/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="875969">GOF19/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="875969">GOF19/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="875969">GOF19/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="875969">GOF19/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="875969">GOF19/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="875969">GOF19/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="875969">GOF19/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="875969">GOF19/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="875969">GOF19/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="875969">GOF19/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="875969">GOF19/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="875969">GOF19/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="875969">GOF19/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="875969">GOF19/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="875969">GOF19/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="875969">GOF19/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="875969">GOF19/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="875969">GOF19/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="875969">GOF19/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="875969">GOF19/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="875969">GOF19/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="875969">GOF19/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF19/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF19/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF19/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF19/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF19/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="20" minx="154" miny="8" minz="94" maxx="366" maxy="1004" maxz="498">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="845218">GOF20/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845218">GOF20/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845218">GOF20/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845218">GOF20/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845218">GOF20/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845218">GOF20/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845218">GOF20/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845218">GOF20/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845218">GOF20/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845218">GOF20/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="845218">GOF20/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845218">GOF20/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845218">GOF20/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845218">GOF20/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845218">GOF20/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845218">GOF20/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845218">GOF20/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845218">GOF20/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845218">GOF20/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845218">GOF20/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="845218">GOF20/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845218">GOF20/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845218">GOF20/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845218">GOF20/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845218">GOF20/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845218">GOF20/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845218">GOF20/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845218">GOF20/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845218">GOF20/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845218">GOF20/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="845218">GOF20/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845218">GOF20/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845218">GOF20/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845218">GOF20/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845218">GOF20/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845218">GOF20/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845218">GOF20/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845218">GOF20/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845218">GOF20/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845218">GOF20/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="845218">GOF20/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="845218">GOF20/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="845218">GOF20/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="845218">GOF20/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="845218">GOF20/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="845218">GOF20/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="845218">GOF20/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="845218">GOF20/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="845218">GOF20/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="845218">GOF20/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF20/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF20/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF20/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF20/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF20/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="21" minx="134" miny="9" minz="79" maxx="367" maxy="990" maxz="415">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="742565">GOF21/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="742565">GOF21/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="742565">GOF21/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="742565">GOF21/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="742565">GOF21/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="742565">GOF21/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="742565">GOF21/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="742565">GOF21/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="742565">GOF21/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="742565">GOF21/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="742565">GOF21/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="742565">GOF21/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="742565">GOF21/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="742565">GOF21/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="742565">GOF21/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="742565">GOF21/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="742565">GOF21/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="742565">GOF21/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="742565">GOF21/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="742565">GOF21/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="742565">GOF21/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="742565">GOF21/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="742565">GOF21/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="742565">GOF21/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="742565">GOF21/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="742565">GOF21/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="742565">GOF21/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="742565">GOF21/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="742565">GOF21/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="742565">GOF21/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="742565">GOF21/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="742565">GOF21/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="742565">GOF21/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="742565">GOF21/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="742565">GOF21/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="742565">GOF21/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="742565">GOF21/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="742565">GOF21/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="742565">GOF21/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="742565">GOF21/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="742565">GOF21/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="742565">GOF21/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="742565">GOF21/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="742565">GOF21/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="742565">GOF21/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="742565">GOF21/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="742565">GOF21/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="742565">GOF21/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="742565">GOF21/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="742565">GOF21/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF21/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF21/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF21/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF21/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF21/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="22" minx="59" miny="9" minz="127" maxx="452" maxy="1005" maxz="377">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="786293">GOF22/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="786293">GOF22/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="786293">GOF22/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="786293">GOF22/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="786293">GOF22/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="786293">GOF22/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="786293">GOF22/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="786293">GOF22/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="786293">GOF22/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="786293">GOF22/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="786293">GOF22/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="786293">GOF22/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="786293">GOF22/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="786293">GOF22/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="786293">GOF22/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="786293">GOF22/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="786293">GOF22/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="786293">GOF22/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="786293">GOF22/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="786293">GOF22/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="786293">GOF22/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="786293">GOF22/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="786293">GOF22/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="786293">GOF22/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="786293">GOF22/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="786293">GOF22/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="786293">GOF22/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="786293">GOF22/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="786293">GOF22/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="786293">GOF22/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="786293">GOF22/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="786293">GOF22/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="786293">GOF22/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="786293">GOF22/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="786293">GOF22/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="786293">GOF22/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="786293">GOF22/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="786293">GOF22/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="786293">GOF22/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="786293">GOF22/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="786293">GOF22/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="786293">GOF22/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="786293">GOF22/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="786293">GOF22/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="786293">GOF22/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="786293">GOF22/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="786293">GOF22/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="786293">GOF22/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="786293">GOF22/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="786293">GOF22/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF22/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF22/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF22/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF22/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF22/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="23" minx="44" miny="7" minz="140" maxx="439" maxy="1014" maxz="385">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="864920">GOF23/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="864920">GOF23/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="864920">GOF23/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="864920">GOF23/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="864920">GOF23/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="864920">GOF23/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="864920">GOF23/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="864920">GOF23/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="864920">GOF23/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="864920">GOF23/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="864920">GOF23/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="864920">GOF23/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="864920">GOF23/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="864920">GOF23/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="864920">GOF23/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="864920">GOF23/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="864920">GOF23/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="864920">GOF23/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="864920">GOF23/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="864920">GOF23/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="864920">GOF23/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="864920">GOF23/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="864920">GOF23/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="864920">GOF23/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="864920">GOF23/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="864920">GOF23/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="864920">GOF23/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="864920">GOF23/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="864920">GOF23/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="864920">GOF23/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="864920">GOF23/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="864920">GOF23/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="864920">GOF23/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="864920">GOF23/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="864920">GOF23/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="864920">GOF23/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="864920">GOF23/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="864920">GOF23/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="864920">GOF23/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="864920">GOF23/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="864920">GOF23/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="864920">GOF23/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="864920">GOF23/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="864920">GOF23/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="864920">GOF23/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="864920">GOF23/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="864920">GOF23/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="864920">GOF23/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="864920">GOF23/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="864920">GOF23/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF23/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF23/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF23/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF23/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF23/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="24" minx="27" miny="10" minz="148" maxx="417" maxy="1003" maxz="392">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="848392">GOF24/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="848392">GOF24/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="848392">GOF24/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="848392">GOF24/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="848392">GOF24/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="848392">GOF24/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="848392">GOF24/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="848392">GOF24/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="848392">GOF24/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="848392">GOF24/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="848392">GOF24/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="848392">GOF24/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="848392">GOF24/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="848392">GOF24/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="848392">GOF24/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="848392">GOF24/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="848392">GOF24/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="848392">GOF24/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="848392">GOF24/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="848392">GOF24/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="848392">GOF24/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="848392">GOF24/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="848392">GOF24/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="848392">GOF24/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="848392">GOF24/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="848392">GOF24/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="848392">GOF24/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="848392">GOF24/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="848392">GOF24/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="848392">GOF24/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="848392">GOF24/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="848392">GOF24/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="848392">GOF24/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="848392">GOF24/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="848392">GOF24/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="848392">GOF24/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="848392">GOF24/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="848392">GOF24/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="848392">GOF24/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="848392">GOF24/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="848392">GOF24/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="848392">GOF24/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="848392">GOF24/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="848392">GOF24/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="848392">GOF24/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="848392">GOF24/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="848392">GOF24/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="848392">GOF24/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="848392">GOF24/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="848392">GOF24/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF24/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF24/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF24/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF24/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF24/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="25" minx="37" miny="9" minz="155" maxx="426" maxy="1008" maxz="379">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="847103">GOF25/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="847103">GOF25/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="847103">GOF25/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="847103">GOF25/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="847103">GOF25/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="847103">GOF25/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="847103">GOF25/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="847103">GOF25/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="847103">GOF25/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="847103">GOF25/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="847103">GOF25/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="847103">GOF25/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="847103">GOF25/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="847103">GOF25/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="847103">GOF25/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="847103">GOF25/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="847103">GOF25/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="847103">GOF25/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="847103">GOF25/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="847103">GOF25/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="847103">GOF25/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="847103">GOF25/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="847103">GOF25/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="847103">GOF25/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="847103">GOF25/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="847103">GOF25/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="847103">GOF25/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="847103">GOF25/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="847103">GOF25/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="847103">GOF25/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="847103">GOF25/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="847103">GOF25/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="847103">GOF25/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="847103">GOF25/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="847103">GOF25/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="847103">GOF25/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="847103">GOF25/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="847103">GOF25/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="847103">GOF25/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="847103">GOF25/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="847103">GOF25/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="847103">GOF25/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="847103">GOF25/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="847103">GOF25/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="847103">GOF25/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="847103">GOF25/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="847103">GOF25/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="847103">GOF25/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="847103">GOF25/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="847103">GOF25/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF25/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF25/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF25/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF25/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF25/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="26" minx="17" miny="9" minz="179" maxx="417" maxy="998" maxz="373">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="854004">GOF26/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854004">GOF26/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854004">GOF26/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854004">GOF26/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854004">GOF26/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854004">GOF26/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854004">GOF26/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854004">GOF26/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854004">GOF26/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854004">GOF26/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="854004">GOF26/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854004">GOF26/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854004">GOF26/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854004">GOF26/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854004">GOF26/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854004">GOF26/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854004">GOF26/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854004">GOF26/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854004">GOF26/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854004">GOF26/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="854004">GOF26/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854004">GOF26/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854004">GOF26/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854004">GOF26/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854004">GOF26/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854004">GOF26/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854004">GOF26/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854004">GOF26/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854004">GOF26/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854004">GOF26/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="854004">GOF26/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854004">GOF26/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854004">GOF26/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854004">GOF26/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854004">GOF26/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854004">GOF26/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854004">GOF26/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854004">GOF26/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854004">GOF26/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854004">GOF26/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="854004">GOF26/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854004">GOF26/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854004">GOF26/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854004">GOF26/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854004">GOF26/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854004">GOF26/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854004">GOF26/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854004">GOF26/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854004">GOF26/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854004">GOF26/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF26/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF26/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF26/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF26/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF26/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="27" minx="2" miny="9" minz="182" maxx="405" maxy="992" maxz="376">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="854949">GOF27/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854949">GOF27/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854949">GOF27/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854949">GOF27/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854949">GOF27/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854949">GOF27/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854949">GOF27/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854949">GOF27/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854949">GOF27/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854949">GOF27/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="854949">GOF27/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854949">GOF27/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854949">GOF27/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854949">GOF27/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854949">GOF27/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854949">GOF27/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854949">GOF27/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854949">GOF27/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854949">GOF27/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854949">GOF27/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="854949">GOF27/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854949">GOF27/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854949">GOF27/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854949">GOF27/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854949">GOF27/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854949">GOF27/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854949">GOF27/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854949">GOF27/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854949">GOF27/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854949">GOF27/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="854949">GOF27/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854949">GOF27/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854949">GOF27/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854949">GOF27/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854949">GOF27/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854949">GOF27/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854949">GOF27/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854949">GOF27/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854949">GOF27/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854949">GOF27/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="854949">GOF27/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854949">GOF27/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854949">GOF27/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854949">GOF27/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854949">GOF27/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854949">GOF27/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854949">GOF27/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854949">GOF27/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854949">GOF27/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854949">GOF27/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF27/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF27/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF27/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF27/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF27/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="28" minx="23" miny="10" minz="170" maxx="407" maxy="989" maxz="421">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="814536">GOF28/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="814536">GOF28/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="814536">GOF28/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="814536">GOF28/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="814536">GOF28/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="814536">GOF28/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="814536">GOF28/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="814536">GOF28/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="814536">GOF28/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="814536">GOF28/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="814536">GOF28/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="814536">GOF28/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="814536">GOF28/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="814536">GOF28/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="814536">GOF28/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="814536">GOF28/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="814536">GOF28/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="814536">GOF28/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="814536">GOF28/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="814536">GOF28/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="814536">GOF28/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="814536">GOF28/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="814536">GOF28/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="814536">GOF28/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="814536">GOF28/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="814536">GOF28/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="814536">GOF28/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="814536">GOF28/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="814536">GOF28/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="814536">GOF28/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="814536">GOF28/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="814536">GOF28/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="814536">GOF28/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="814536">GOF28/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="814536">GOF28/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="814536">GOF28/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="814536">GOF28/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="814536">GOF28/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="814536">GOF28/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="814536">GOF28/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="814536">GOF28/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="814536">GOF28/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="814536">GOF28/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="814536">GOF28/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="814536">GOF28/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="814536">GOF28/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="814536">GOF28/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="814536">GOF28/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="814536">GOF28/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="814536">GOF28/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF28/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF28/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF28/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF28/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF28/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="29" minx="66" miny="8" minz="103" maxx="363" maxy="1017" maxz="486">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="852395">GOF29/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="852395">GOF29/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="852395">GOF29/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="852395">GOF29/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="852395">GOF29/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="852395">GOF29/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="852395">GOF29/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="852395">GOF29/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="852395">GOF29/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="852395">GOF29/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="852395">GOF29/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="852395">GOF29/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="852395">GOF29/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="852395">GOF29/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="852395">GOF29/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="852395">GOF29/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="852395">GOF29/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="852395">GOF29/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="852395">GOF29/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="852395">GOF29/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="852395">GOF29/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="852395">GOF29/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="852395">GOF29/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="852395">GOF29/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="852395">GOF29/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="852395">GOF29/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="852395">GOF29/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="852395">GOF29/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="852395">GOF29/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="852395">GOF29/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="852395">GOF29/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="852395">GOF29/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="852395">GOF29/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="852395">GOF29/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="852395">GOF29/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="852395">GOF29/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="852395">GOF29/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="852395">GOF29/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="852395">GOF29/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="852395">GOF29/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="852395">GOF29/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="852395">GOF29/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="852395">GOF29/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="852395">GOF29/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="852395">GOF29/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="852395">GOF29/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="852395">GOF29/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="852395">GOF29/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="852395">GOF29/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="852395">GOF29/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF29/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF29/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF29/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF29/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF29/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
+
+
+<GOF id="30" minx="136" miny="7" minz="120" maxx="340" maxy="1017" maxz="530">
+
+    <AdaptationSet id="1">
+
+        <Representation id="1">
+
+            <Frame id="1" PointN="854070">GOF30/r1/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854070">GOF30/r1/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854070">GOF30/r1/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854070">GOF30/r1/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854070">GOF30/r1/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854070">GOF30/r1/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854070">GOF30/r1/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854070">GOF30/r1/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854070">GOF30/r1/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854070">GOF30/r1/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="2">
+
+            <Frame id="1" PointN="854070">GOF30/r2/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854070">GOF30/r2/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854070">GOF30/r2/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854070">GOF30/r2/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854070">GOF30/r2/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854070">GOF30/r2/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854070">GOF30/r2/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854070">GOF30/r2/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854070">GOF30/r2/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854070">GOF30/r2/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="3">
+
+            <Frame id="1" PointN="854070">GOF30/r3/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854070">GOF30/r3/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854070">GOF30/r3/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854070">GOF30/r3/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854070">GOF30/r3/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854070">GOF30/r3/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854070">GOF30/r3/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854070">GOF30/r3/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854070">GOF30/r3/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854070">GOF30/r3/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="4">
+
+            <Frame id="1" PointN="854070">GOF30/r4/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854070">GOF30/r4/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854070">GOF30/r4/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854070">GOF30/r4/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854070">GOF30/r4/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854070">GOF30/r4/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854070">GOF30/r4/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854070">GOF30/r4/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854070">GOF30/r4/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854070">GOF30/r4/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+        <Representation id="5">
+
+            <Frame id="1" PointN="854070">GOF30/r5/ply/notile/frame_1000.ply</Frame>
+
+            <Frame id="2" PointN="854070">GOF30/r5/ply/notile/frame_1001.ply</Frame>
+
+            <Frame id="3" PointN="854070">GOF30/r5/ply/notile/frame_1002.ply</Frame>
+
+            <Frame id="4" PointN="854070">GOF30/r5/ply/notile/frame_1003.ply</Frame>
+
+            <Frame id="5" PointN="854070">GOF30/r5/ply/notile/frame_1004.ply</Frame>
+
+            <Frame id="6" PointN="854070">GOF30/r5/ply/notile/frame_1005.ply</Frame>
+
+            <Frame id="7" PointN="854070">GOF30/r5/ply/notile/frame_1006.ply</Frame>
+
+            <Frame id="8" PointN="854070">GOF30/r5/ply/notile/frame_1007.ply</Frame>
+
+            <Frame id="9" PointN="854070">GOF30/r5/ply/notile/frame_1008.ply</Frame>
+
+            <Frame id="10" PointN="854070">GOF30/r5/ply/notile/frame_1009.ply</Frame>
+
+        </Representation>
+
+    </AdaptationSet>
+
+    <AdaptationSet id="2">
+
+        <Representation id="1">GOF30/r1/bin/notile/longdress.bin</Representation>
+
+        <Representation id="2">GOF30/r2/bin/notile/longdress.bin</Representation>
+
+        <Representation id="3">GOF30/r3/bin/notile/longdress.bin</Representation>
+
+        <Representation id="4">GOF30/r4/bin/notile/longdress.bin</Representation>
+
+        <Representation id="5">GOF30/r5/bin/notile/longdress.bin</Representation>
+
+    </AdaptationSet>
+
+</GOF>
+
