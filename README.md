@@ -1,7 +1,9 @@
 # Narwhal-volumetric-video-streaming-system
 # Requirement
+---
 VS2017+PCL1.9.1+QT 5.12
 # Function Description
+---
 ## The main file is mainly included in PCLVISUALIZER.CPP:
 ### 1. MPD file resolution module (MPD file needs to be generated in a certain format)
 ### 2. Cut block storage information module
@@ -11,5 +13,15 @@ VS2017+PCL1.9.1+QT 5.12
 ### 6.Buffer Read (QT Multithread)
 ### 7. Server communication function (the server uses Nginx configuration)
 
-#Refrence
+# Refrence
+---
+```
 
+@inproceedings{li_demo_2020,
+	title = {Demo Abstract: Narwhal: a {DASH}-based Point Cloud Video Streaming System over Wireless Networks},
+	pages = {1326--1327},
+	booktitle = {{IEEE} {INFOCOM} 2020 - {IEEE} Conference on Computer Communications Workshops ({INFOCOM} {WKSHPS})},
+	author = {Li, Jie and Zhang, Cong and Liu, Zhi and Sun, Wei and Hu, Wei and Li, Qiyue},
+	date = {2020-07},
+}
+```
