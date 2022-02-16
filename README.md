@@ -16,7 +16,23 @@ VS2017+PCL1.9.1+QT 5.12
 # Refrence
 ---
 ```
+@ARTICLE{li2022optimal,
+  author={Li, Jie and Zhang, Cong and Liu, Zhi and Hong, Richang and Hu, Han},
+  ournal={IEEE Transactions on Multimedia}, 
+  title={Optimal Volumetric Video Streaming with Hybrid Saliency based Tiling}, 
+  year={2022},
+  number={}, 
+  pages={}}
 
+@ARTICLE{liu2021point,
+  author={Liu, Zhi and Li, Qiyue and Chen, Xianfu and Wu, Celimuge and Ishihara, Susumu and Li, Jie and Ji, Yusheng},
+  journal={IEEE Network}, 
+  title={Point Cloud Video Streaming: challenges and Solutions}, 
+  year={2021},
+  volume={35},
+  number={5},
+  pages={202-209}}
+  
 @inproceedings{li_demo_2020,
 	title = {Demo Abstract: Narwhal: a {DASH}-based Point Cloud Video Streaming System over Wireless Networks},
 	pages = {1326--1327},
@@ -25,3 +41,5 @@ VS2017+PCL1.9.1+QT 5.12
 	date = {2020-07},
 }
 ```
+
+
