@@ -3,7 +3,14 @@
 ---
 VS2017+PCL1.9.1+QT 5.12
 
-
+# Setup
+---
+### 1.Install PCL 1.9.1 and QT 5.12
+### 2.Configuring PCL and QT in VS2017
+### 3.Install nginx as server
+### 4.Place the point cloud video in the server root directory
+### 5.Generate the corresponding mainfest file
+### 6.Enter the server ip address in the player to play
 
 # Modules Description
 ---
